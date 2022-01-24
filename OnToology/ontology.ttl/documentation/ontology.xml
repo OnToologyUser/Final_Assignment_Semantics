@@ -1,0 +1,1318 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/def/autoimmunedisease#"
+     xml:base="http://w3id.org/def/autoimmunedisease"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://w3id.org/def/autoimmunedisease#">
+        <dc:creator>Guillermo Chumaceiro López</dc:creator>
+        <dc:creator>Juan Carlos Carrasco Sánchez</dc:creator>
+        <dc:description>Ontology representing Immune Diseases and the drugs used to treat them</dc:description>
+        <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>
+        <dc:title>Autoimmune Disease Onthology</dc:title>
+        <owl:versionInfo>0.0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#Definition -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#Definition">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#AutoimmuneDisease"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#xsd"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#FoundationYear -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#FoundationYear">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#xsd"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#MESHTermOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#MESHTermOf">
+        <owl:inverseOf rdf:resource="http://w3id.org/def/autoimmunedisease#hasMESHTerm"/>
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#MESHTerm"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#AutoimmuneDisease"/>
+        <rdfs:label>MESH term of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#administeredIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#administeredIn">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#Drug"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#AdministrationRoute"/>
+        <rdfs:label>administered in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#affectsBloodSystem -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#affectsBloodSystem">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#BloodAutoimmuneDisease"/>
+        <rdfs:label>affects blood system</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#affectsCardiovascularSystem -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#affectsCardiovascularSystem">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#CardiovascularAutoimmuneDisease"/>
+        <rdfs:label>affects cardiovascular system</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#affectsCentralNervousSystem -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#affectsCentralNervousSystem">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#CentralNervousAutoimmuneDisease"/>
+        <rdfs:label>affects central nervous system</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#affectsEndocrineSystem -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#affectsEndocrineSystem">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#EndocrineAutoimmuneDisease"/>
+        <rdfs:label>affects endocrine system</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#affectsExocrineSystem -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#affectsExocrineSystem">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#ExocrineAutoimmuneDisease"/>
+        <rdfs:label>affects exocrine system</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#affectsEyesEarNoseThroatSystem -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#affectsEyesEarNoseThroatSystem">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#EyesEarNoseThroatAutoimmuneDisease"/>
+        <rdfs:label>affects eyes ear nose throat system</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#affectsGastrointestinalSystem -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#affectsGastrointestinalSystem">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#GastrointestinalAutoimmuneDisease"/>
+        <rdfs:label>affects gastrointestinal system</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#affectsMuscoloskeletalSystem -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#affectsMuscoloskeletalSystem">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#MusculoskeletalAutoimmuneDisease"/>
+        <rdfs:label>affects muscoloskeletal system</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#affectsPeripheralNervousSystem -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#affectsPeripheralNervousSystem">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#PeripheralNervousAutoimmuneDisease"/>
+        <rdfs:label>affects peripheral nervous system</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#affectsSkinConnectiveTissueSystem -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#affectsSkinConnectiveTissueSystem">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#SkinConnectiveTissueAutoimmuneDisease"/>
+        <rdfs:label>affects skin connective tissue system</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#affectsUrogenitalSystem -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#affectsUrogenitalSystem">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#UrogenitalAutoimmuneDisease"/>
+        <rdfs:label>affects urogenital system</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#belongsToATCGroup -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#belongsToATCGroup">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#Drug"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#ATCGroup"/>
+        <rdfs:label>belongs to ATC group</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#belongsToMoleculeType -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#belongsToMoleculeType">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#TherapeuticTarget"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#MoleculeType"/>
+        <rdfs:label>belongs to molecule type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#composedByActiveIngredient -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#composedByActiveIngredient">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#Drug"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#ActivePharmaceuticalIngredient"/>
+        <rdfs:label>composed by active ingredient</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#expressedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#expressedBy">
+        <rdfs:domain rdf:resource="http://purl.uniprot.org/core/Protein"/>
+        <rdfs:range rdf:resource="http://purl.uniprot.org/core/Gene"/>
+        <rdfs:label>expressed by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#hasAsociation -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#hasAsociation">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#AutoimmuneDisease"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#Asociaciones"/>
+        <rdfs:label>has asociation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#hasAutoimmuneDiseaseType -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#hasAutoimmuneDiseaseType">
+        <owl:inverseOf rdf:resource="http://w3id.org/def/autoimmunedisease#includeAutoimmuneDisease"/>
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#AutoimmuneDisease"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType"/>
+        <rdfs:label>has autoimmune disease type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#hasChebiID -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#hasChebiID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#Drug"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#ChebiID"/>
+        <rdfs:label>has chEBI ID</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#hasCountryOfOrigin -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#hasCountryOfOrigin">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#Company"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#Country"/>
+        <rdfs:label>has country of origin</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#hasDiagnosisMethods -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#hasDiagnosisMethods">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#AutoimmuneDisease"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#DiagnosisMethods"/>
+        <rdfs:label>has diagnosis methods</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#hasMESHTerm -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#hasMESHTerm">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#AutoimmuneDisease"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#MESHTerm"/>
+        <rdfs:label>has MESH term</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#hasMolecularFunction -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#hasMolecularFunction">
+        <rdfs:domain rdf:resource="http://purl.uniprot.org/core/Protein"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#MolecularFunction"/>
+        <rdfs:label>has molecular function</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#hasName -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#hasName">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#Drug"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#CommercialName"/>
+        <rdfs:label>has name</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#hasResponsibleImmuneCell -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#hasResponsibleImmuneCell">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#AutoimmuneDisease"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#ImmuneCell"/>
+        <rdfs:label>has responsible immune cell</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#hasSymptoms -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#hasSymptoms">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#AutoimmuneDisease"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#Symptoms"/>
+        <rdfs:label>has symptoms</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#includeAutoimmuneDisease -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#includeAutoimmuneDisease">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#AutoimmuneDisease"/>
+        <rdfs:label>include autoimmune disease</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#interactsWithReceptor -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#interactsWithReceptor">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#SignalMolecule"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#Receptor"/>
+        <rdfs:label>interacts with receptor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#interactsWithTarget -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#interactsWithTarget">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#Drug"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#TherapeuticTarget"/>
+        <rdfs:label>interacts with target</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#involvedInBiologicalProcess -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#involvedInBiologicalProcess">
+        <rdfs:domain rdf:resource="http://purl.uniprot.org/core/Protein"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#BiologicalProcess"/>
+        <rdfs:label>involved in biological process</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#involvedInPathway -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#involvedInPathway">
+        <rdfs:domain rdf:resource="http://purl.uniprot.org/core/Protein"/>
+        <rdfs:range rdf:resource="http://purl.uniprot.org/core/Pathway"/>
+        <rdfs:label>involved in pathway</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#isTreatedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#isTreatedBy">
+        <owl:inverseOf rdf:resource="http://w3id.org/def/autoimmunedisease#treatsDisease"/>
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#AutoimmuneDisease"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#Drug"/>
+        <rdfs:label>is treated by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#manufacturedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#manufacturedBy">
+        <owl:inverseOf rdf:resource="http://w3id.org/def/autoimmunedisease#manufactures"/>
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#Drug"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#PharmaceuticCompany"/>
+        <rdfs:label>manufactured by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#manufactures -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#manufactures">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#PharmaceuticCompany"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#Drug"/>
+        <rdfs:label>manufactures</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#mayCauseSecondaryEffects -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#mayCauseSecondaryEffects">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#Drug"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#SecondaryEffect"/>
+        <rdfs:label>may cause secondary effects</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#presentInBodySystem -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#presentInBodySystem">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#Organ"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#BodySystem"/>
+        <rdfs:label>present in body system</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#presentInCellType -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#presentInCellType">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#Receptor"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#CellType"/>
+        <rdfs:label>present in cell type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#presentInOrgan -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#presentInOrgan">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#Tissue"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#Organ"/>
+        <rdfs:label>present in organ</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#presentInTissue -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#presentInTissue">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#CellType"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#Tissue"/>
+        <rdfs:label>present in tissue</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#producesSignalMolecule -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#producesSignalMolecule">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#ImmuneCell"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#SignalMolecule"/>
+        <rdfs:label>produces signal molecule</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#treatsDisease -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/autoimmunedisease#treatsDisease">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#Drug"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/autoimmunedisease#AutoimmuneDisease"/>
+        <rdfs:label>treats disease</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#Definition -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/def/autoimmunedisease#Definition"/>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#Dosage -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/def/autoimmunedisease#Dosage">
+        <rdfs:domain rdf:resource="http://w3id.org/def/autoimmunedisease#Drug"/>
+        <rdfs:label>dosage</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#FoundationYear -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/def/autoimmunedisease#FoundationYear"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_4 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_4">
+        <owl:equivalentClass rdf:resource="http://w3id.org/def/autoimmunedisease#AutoimmuneDisease"/>
+        <rdfs:label>AutoimmuneDisease class from Human Disease Ontology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0003674 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0003674">
+        <owl:equivalentClass rdf:resource="http://w3id.org/def/autoimmunedisease#MolecularFunction"/>
+        <rdfs:label>MolecularFunction class from Gene Ontology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
+        <owl:equivalentClass rdf:resource="http://w3id.org/def/autoimmunedisease#BiologicalProcess"/>
+        <rdfs:label>BiologicalProcess class from Gene Ontology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.uniprot.org/core/Gene -->
+
+
+    <owl:Class rdf:about="http://purl.uniprot.org/core/Gene">
+        <rdfs:label>Gene</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.uniprot.org/core/Pathway -->
+
+
+    <owl:Class rdf:about="http://purl.uniprot.org/core/Pathway">
+        <rdfs:label>Pathway</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.uniprot.org/core/Protein -->
+
+
+    <owl:Class rdf:about="http://purl.uniprot.org/core/Protein">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/autoimmunedisease#MoleculeType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/autoimmunedisease#hasMolecularFunction"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/def/autoimmunedisease#MolecularFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/autoimmunedisease#involvedInBiologicalProcess"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/def/autoimmunedisease#BiologicalProcess"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/autoimmunedisease#involvedInPathway"/>
+                <owl:someValuesFrom rdf:resource="http://purl.uniprot.org/core/Pathway"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/autoimmunedisease#expressedBy"/>
+                <owl:allValuesFrom rdf:resource="http://purl.uniprot.org/core/Gene"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/def/autoimmunedisease#Carbohydrate"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/def/autoimmunedisease#Lipid"/>
+        <rdfs:label>Protein</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#ATCGroup -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#ATCGroup">
+        <rdfs:label>ATC Group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#ActivePharmaceuticalIngredient -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#ActivePharmaceuticalIngredient">
+        <rdfs:label>Active Pharmaceutical Ingredient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#AdministrationRoute -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#AdministrationRoute">
+        <rdfs:label>Administration Route</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#Asociaciones -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#Asociaciones">
+        <rdfs:label>Asociaciones</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#AutoimmuneDisease -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#AutoimmuneDisease">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/autoimmunedisease#hasAsociation"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/def/autoimmunedisease#Asociaciones"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/autoimmunedisease#hasDiagnosisMethods"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/def/autoimmunedisease#DiagnosisMethods"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/autoimmunedisease#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/def/autoimmunedisease#Symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/autoimmunedisease#isTreatedBy"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/def/autoimmunedisease#Drug"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/autoimmunedisease#hasAutoimmuneDiseaseType"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/autoimmunedisease#hasResponsibleImmuneCell"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/def/autoimmunedisease#ImmuneCell"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Autoimmune Disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType">
+        <rdfs:label>Autoimmune Disease Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#BiologicalProcess -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#BiologicalProcess">
+        <rdfs:label>Biological Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#BloodAutoimmuneDisease -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#BloodAutoimmuneDisease">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType"/>
+        <rdfs:label>Blood Autoimmune Disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#BodySystem -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#BodySystem">
+        <rdfs:label>Body System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#Carbohydrate -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#Carbohydrate">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/autoimmunedisease#MoleculeType"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/def/autoimmunedisease#Lipid"/>
+        <rdfs:label>Carbohydrate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#CardiovascularAutoimmuneDisease -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#CardiovascularAutoimmuneDisease">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType"/>
+        <rdfs:label>Cardiovascular Autoimmune Disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#CellType -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#CellType">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/autoimmunedisease#presentInTissue"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/def/autoimmunedisease#Tissue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Cell Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#CentralNervousAutoimmuneDisease -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#CentralNervousAutoimmuneDisease">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType"/>
+        <rdfs:label>Central Nervous Autoimmune Disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#ChebiID -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#ChebiID">
+        <rdfs:label>ChEBI ID</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#CommercialName -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#CommercialName">
+        <rdfs:label>Commercial Name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#Company -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#Company">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/autoimmunedisease#hasCountryOfOrigin"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/def/autoimmunedisease#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Company</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#Country -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#Country">
+        <rdfs:label>Country</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#DiagnosisMethods -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#DiagnosisMethods">
+        <rdfs:label>Diagnosis Methods</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#Drug -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#Drug">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/autoimmunedisease#mayCauseSecondaryEffects"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/def/autoimmunedisease#SecondaryEffect"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/autoimmunedisease#administeredIn"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/def/autoimmunedisease#AdministrationRoute"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/autoimmunedisease#composedByActiveIngredient"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/def/autoimmunedisease#ActivePharmaceuticalIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/autoimmunedisease#hasName"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/def/autoimmunedisease#CommercialName"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/autoimmunedisease#interactsWithTarget"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/def/autoimmunedisease#TherapeuticTarget"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/autoimmunedisease#manufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/def/autoimmunedisease#PharmaceuticCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Drug</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#EndocrineAutoimmuneDisease -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#EndocrineAutoimmuneDisease">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType"/>
+        <rdfs:label>Endocrine Autoimmune Disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#ExocrineAutoimmuneDisease -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#ExocrineAutoimmuneDisease">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType"/>
+        <rdfs:label>Exocrine Autoimmune Disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#EyesEarNoseThroatAutoimmuneDisease -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#EyesEarNoseThroatAutoimmuneDisease">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType"/>
+        <rdfs:label>Eyes Ear Nose Throat Autoimmune Disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#GastrointestinalAutoimmuneDisease -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#GastrointestinalAutoimmuneDisease">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType"/>
+        <rdfs:label>Gastrointestinal Autoimmune Disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#ImmuneCell -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#ImmuneCell">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/autoimmunedisease#producesSignalMolecule"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/def/autoimmunedisease#SignalMolecule"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Immune Cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#Lipid -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#Lipid">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/autoimmunedisease#MoleculeType"/>
+        <rdfs:label>Lipid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#MESHTerm -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#MESHTerm">
+        <rdfs:label>MESH Term</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#MolecularFunction -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#MolecularFunction">
+        <rdfs:label>Molecular Function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#MoleculeType -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#MoleculeType">
+        <rdfs:label>Molecule Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#MusculoskeletalAutoimmuneDisease -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#MusculoskeletalAutoimmuneDisease">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType"/>
+        <rdfs:label>Musculoskeletal Autoimmune Disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#Organ -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#Organ">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/autoimmunedisease#presentInBodySystem"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/def/autoimmunedisease#BodySystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Organ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#PeripheralNervousAutoimmuneDisease -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#PeripheralNervousAutoimmuneDisease">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType"/>
+        <rdfs:label>Peripheral Nervous Autoimmune Disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#PharmaceuticCompany -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#PharmaceuticCompany">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/autoimmunedisease#Company"/>
+        <rdfs:label>Pharmaceutic Company</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#Receptor -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#Receptor">
+        <rdfs:subClassOf rdf:resource="http://purl.uniprot.org/core/Protein"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/autoimmunedisease#presentInCellType"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/def/autoimmunedisease#CellType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Receptor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#SecondaryEffect -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#SecondaryEffect">
+        <rdfs:label>Secondary Effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#SignalMolecule -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#SignalMolecule">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/autoimmunedisease#interactsWithReceptor"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/def/autoimmunedisease#Receptor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Signal Molecule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#SkinConnectiveTissueAutoimmuneDisease -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#SkinConnectiveTissueAutoimmuneDisease">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType"/>
+        <rdfs:label>Skin Connective Tissue Autoimmune Disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#Symptoms -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#Symptoms">
+        <rdfs:label>Symptoms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#TherapeuticTarget -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#TherapeuticTarget">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/autoimmunedisease#belongsToMoleculeType"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/def/autoimmunedisease#MoleculeType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Therapeutic Target</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#Tissue -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#Tissue">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/autoimmunedisease#presentInOrgan"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/def/autoimmunedisease#Organ"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Tissue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#UrogenitalAutoimmuneDisease -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/autoimmunedisease#UrogenitalAutoimmuneDisease">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType"/>
+        <rdfs:label>Urogenital Autoimmune Disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#xsd -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#xsd"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#BloodSystem -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/autoimmunedisease#BloodSystem">
+        <rdf:type rdf:resource="http://w3id.org/def/autoimmunedisease#BodySystem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#CardiovascularSystem -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/autoimmunedisease#CardiovascularSystem">
+        <rdf:type rdf:resource="http://w3id.org/def/autoimmunedisease#BodySystem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#CentralNervousSystem -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/autoimmunedisease#CentralNervousSystem">
+        <rdf:type rdf:resource="http://w3id.org/def/autoimmunedisease#BodySystem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#EndocrineSystem -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/autoimmunedisease#EndocrineSystem">
+        <rdf:type rdf:resource="http://w3id.org/def/autoimmunedisease#BodySystem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#ExocrineSystem -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/autoimmunedisease#ExocrineSystem">
+        <rdf:type rdf:resource="http://w3id.org/def/autoimmunedisease#BodySystem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#EyesEarNoseThroatSystem -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/autoimmunedisease#EyesEarNoseThroatSystem">
+        <rdf:type rdf:resource="http://w3id.org/def/autoimmunedisease#BodySystem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#GastrointestinalSystem -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/autoimmunedisease#GastrointestinalSystem">
+        <rdf:type rdf:resource="http://w3id.org/def/autoimmunedisease#BodySystem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#MusculoskeletalSystem -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/autoimmunedisease#MusculoskeletalSystem">
+        <rdf:type rdf:resource="http://w3id.org/def/autoimmunedisease#BodySystem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#PeripheralNervousSystem -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/autoimmunedisease#PeripheralNervousSystem">
+        <rdf:type rdf:resource="http://w3id.org/def/autoimmunedisease#BodySystem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#SkinConnectiveTissueSystem -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/autoimmunedisease#SkinConnectiveTissueSystem">
+        <rdf:type rdf:resource="http://w3id.org/def/autoimmunedisease#BodySystem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/autoimmunedisease#UrogenitalSystem -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/autoimmunedisease#UrogenitalSystem">
+        <rdf:type rdf:resource="http://w3id.org/def/autoimmunedisease#BodySystem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://w3id.org/def/autoimmunedisease#Definition">
+        <rdfs:label>definition</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://w3id.org/def/autoimmunedisease#FoundationYear">
+        <rdfs:label>foundation year</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+

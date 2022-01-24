@@ -1,0 +1,696 @@
+<http://w3id.org/def/autoimmunedisease#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/def/autoimmunedisease#> <http://purl.org/dc/elements/1.1/creator> "Guillermo Chumaceiro López" .
+<http://w3id.org/def/autoimmunedisease#> <http://purl.org/dc/elements/1.1/creator> "Juan Carlos Carrasco Sánchez" .
+<http://w3id.org/def/autoimmunedisease#> <http://purl.org/dc/elements/1.1/description> "Ontology representing Immune Diseases and the drugs used to treat them" .
+<http://w3id.org/def/autoimmunedisease#> <http://purl.org/dc/elements/1.1/rights> "https://creativecommons.org/licenses/by/4.0/" .
+<http://w3id.org/def/autoimmunedisease#> <http://purl.org/dc/elements/1.1/title> "Autoimmune Disease Onthology" .
+<http://w3id.org/def/autoimmunedisease#> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/def/autoimmunedisease#Definition
+<http://w3id.org/def/autoimmunedisease#Definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#Definition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#AutoimmuneDisease> .
+<http://w3id.org/def/autoimmunedisease#Definition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#xsd> .
+# 
+# http://w3id.org/def/autoimmunedisease#FoundationYear
+<http://w3id.org/def/autoimmunedisease#FoundationYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#FoundationYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#Company> .
+<http://w3id.org/def/autoimmunedisease#FoundationYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#xsd> .
+# 
+# http://w3id.org/def/autoimmunedisease#MESHTermOf
+<http://w3id.org/def/autoimmunedisease#MESHTermOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#MESHTermOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://w3id.org/def/autoimmunedisease#hasMESHTerm> .
+<http://w3id.org/def/autoimmunedisease#MESHTermOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#MESHTerm> .
+<http://w3id.org/def/autoimmunedisease#MESHTermOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#AutoimmuneDisease> .
+<http://w3id.org/def/autoimmunedisease#MESHTermOf> <http://www.w3.org/2000/01/rdf-schema#label> "MESH term of" .
+# 
+# http://w3id.org/def/autoimmunedisease#administeredIn
+<http://w3id.org/def/autoimmunedisease#administeredIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#administeredIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#Drug> .
+<http://w3id.org/def/autoimmunedisease#administeredIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#AdministrationRoute> .
+<http://w3id.org/def/autoimmunedisease#administeredIn> <http://www.w3.org/2000/01/rdf-schema#label> "administered in" .
+# 
+# http://w3id.org/def/autoimmunedisease#affectsBloodSystem
+<http://w3id.org/def/autoimmunedisease#affectsBloodSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#affectsBloodSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#BloodAutoimmuneDisease> .
+<http://w3id.org/def/autoimmunedisease#affectsBloodSystem> <http://www.w3.org/2000/01/rdf-schema#label> "affects blood system" .
+# 
+# http://w3id.org/def/autoimmunedisease#affectsCardiovascularSystem
+<http://w3id.org/def/autoimmunedisease#affectsCardiovascularSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#affectsCardiovascularSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#CardiovascularAutoimmuneDisease> .
+<http://w3id.org/def/autoimmunedisease#affectsCardiovascularSystem> <http://www.w3.org/2000/01/rdf-schema#label> "affects cardiovascular system" .
+# 
+# http://w3id.org/def/autoimmunedisease#affectsCentralNervousSystem
+<http://w3id.org/def/autoimmunedisease#affectsCentralNervousSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#affectsCentralNervousSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#CentralNervousAutoimmuneDisease> .
+<http://w3id.org/def/autoimmunedisease#affectsCentralNervousSystem> <http://www.w3.org/2000/01/rdf-schema#label> "affects central nervous system" .
+# 
+# http://w3id.org/def/autoimmunedisease#affectsEndocrineSystem
+<http://w3id.org/def/autoimmunedisease#affectsEndocrineSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#affectsEndocrineSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#EndocrineAutoimmuneDisease> .
+<http://w3id.org/def/autoimmunedisease#affectsEndocrineSystem> <http://www.w3.org/2000/01/rdf-schema#label> "affects endocrine system" .
+# 
+# http://w3id.org/def/autoimmunedisease#affectsExocrineSystem
+<http://w3id.org/def/autoimmunedisease#affectsExocrineSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#affectsExocrineSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#ExocrineAutoimmuneDisease> .
+<http://w3id.org/def/autoimmunedisease#affectsExocrineSystem> <http://www.w3.org/2000/01/rdf-schema#label> "affects exocrine system" .
+# 
+# http://w3id.org/def/autoimmunedisease#affectsEyesEarNoseThroatSystem
+<http://w3id.org/def/autoimmunedisease#affectsEyesEarNoseThroatSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#affectsEyesEarNoseThroatSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#EyesEarNoseThroatAutoimmuneDisease> .
+<http://w3id.org/def/autoimmunedisease#affectsEyesEarNoseThroatSystem> <http://www.w3.org/2000/01/rdf-schema#label> "affects eyes ear nose throat system" .
+# 
+# http://w3id.org/def/autoimmunedisease#affectsGastrointestinalSystem
+<http://w3id.org/def/autoimmunedisease#affectsGastrointestinalSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#affectsGastrointestinalSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#GastrointestinalAutoimmuneDisease> .
+<http://w3id.org/def/autoimmunedisease#affectsGastrointestinalSystem> <http://www.w3.org/2000/01/rdf-schema#label> "affects gastrointestinal system" .
+# 
+# http://w3id.org/def/autoimmunedisease#affectsMuscoloskeletalSystem
+<http://w3id.org/def/autoimmunedisease#affectsMuscoloskeletalSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#affectsMuscoloskeletalSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#MusculoskeletalAutoimmuneDisease> .
+<http://w3id.org/def/autoimmunedisease#affectsMuscoloskeletalSystem> <http://www.w3.org/2000/01/rdf-schema#label> "affects muscoloskeletal system" .
+# 
+# http://w3id.org/def/autoimmunedisease#affectsPeripheralNervousSystem
+<http://w3id.org/def/autoimmunedisease#affectsPeripheralNervousSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#affectsPeripheralNervousSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#PeripheralNervousAutoimmuneDisease> .
+<http://w3id.org/def/autoimmunedisease#affectsPeripheralNervousSystem> <http://www.w3.org/2000/01/rdf-schema#label> "affects peripheral nervous system" .
+# 
+# http://w3id.org/def/autoimmunedisease#affectsSkinConnectiveTissueSystem
+<http://w3id.org/def/autoimmunedisease#affectsSkinConnectiveTissueSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#affectsSkinConnectiveTissueSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#SkinConnectiveTissueAutoimmuneDisease> .
+<http://w3id.org/def/autoimmunedisease#affectsSkinConnectiveTissueSystem> <http://www.w3.org/2000/01/rdf-schema#label> "affects skin connective tissue system" .
+# 
+# http://w3id.org/def/autoimmunedisease#affectsUrogenitalSystem
+<http://w3id.org/def/autoimmunedisease#affectsUrogenitalSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#affectsUrogenitalSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#UrogenitalAutoimmuneDisease> .
+<http://w3id.org/def/autoimmunedisease#affectsUrogenitalSystem> <http://www.w3.org/2000/01/rdf-schema#label> "affects urogenital system" .
+# 
+# http://w3id.org/def/autoimmunedisease#belongsToATCGroup
+<http://w3id.org/def/autoimmunedisease#belongsToATCGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#belongsToATCGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/def/autoimmunedisease#belongsToATCGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#Drug> .
+<http://w3id.org/def/autoimmunedisease#belongsToATCGroup> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#ATCGroup> .
+<http://w3id.org/def/autoimmunedisease#belongsToATCGroup> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to ATC group" .
+# 
+# http://w3id.org/def/autoimmunedisease#belongsToMoleculeType
+<http://w3id.org/def/autoimmunedisease#belongsToMoleculeType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#belongsToMoleculeType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#TherapeuticTarget> .
+<http://w3id.org/def/autoimmunedisease#belongsToMoleculeType> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#MoleculeType> .
+<http://w3id.org/def/autoimmunedisease#belongsToMoleculeType> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to molecule type" .
+# 
+# http://w3id.org/def/autoimmunedisease#composedByActiveIngredient
+<http://w3id.org/def/autoimmunedisease#composedByActiveIngredient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#composedByActiveIngredient> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#Drug> .
+<http://w3id.org/def/autoimmunedisease#composedByActiveIngredient> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#ActivePharmaceuticalIngredient> .
+<http://w3id.org/def/autoimmunedisease#composedByActiveIngredient> <http://www.w3.org/2000/01/rdf-schema#label> "composed by active ingredient" .
+# 
+# http://w3id.org/def/autoimmunedisease#expressedBy
+<http://w3id.org/def/autoimmunedisease#expressedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#expressedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.uniprot.org/core/Protein> .
+<http://w3id.org/def/autoimmunedisease#expressedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.uniprot.org/core/Gene> .
+<http://w3id.org/def/autoimmunedisease#expressedBy> <http://www.w3.org/2000/01/rdf-schema#label> "expressed by" .
+# 
+# http://w3id.org/def/autoimmunedisease#hasAsociation
+<http://w3id.org/def/autoimmunedisease#hasAsociation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#hasAsociation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#AutoimmuneDisease> .
+<http://w3id.org/def/autoimmunedisease#hasAsociation> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#Asociaciones> .
+<http://w3id.org/def/autoimmunedisease#hasAsociation> <http://www.w3.org/2000/01/rdf-schema#label> "has asociation" .
+# 
+# http://w3id.org/def/autoimmunedisease#hasAutoimmuneDiseaseType
+<http://w3id.org/def/autoimmunedisease#hasAutoimmuneDiseaseType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#hasAutoimmuneDiseaseType> <http://www.w3.org/2002/07/owl#inverseOf> <http://w3id.org/def/autoimmunedisease#includeAutoimmuneDisease> .
+<http://w3id.org/def/autoimmunedisease#hasAutoimmuneDiseaseType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#AutoimmuneDisease> .
+<http://w3id.org/def/autoimmunedisease#hasAutoimmuneDiseaseType> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType> .
+<http://w3id.org/def/autoimmunedisease#hasAutoimmuneDiseaseType> <http://www.w3.org/2000/01/rdf-schema#label> "has autoimmune disease type" .
+# 
+# http://w3id.org/def/autoimmunedisease#hasChebiID
+<http://w3id.org/def/autoimmunedisease#hasChebiID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#hasChebiID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/def/autoimmunedisease#hasChebiID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#Drug> .
+<http://w3id.org/def/autoimmunedisease#hasChebiID> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#ChebiID> .
+<http://w3id.org/def/autoimmunedisease#hasChebiID> <http://www.w3.org/2000/01/rdf-schema#label> "has chEBI ID" .
+# 
+# http://w3id.org/def/autoimmunedisease#hasCountryOfOrigin
+<http://w3id.org/def/autoimmunedisease#hasCountryOfOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#hasCountryOfOrigin> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#Company> .
+<http://w3id.org/def/autoimmunedisease#hasCountryOfOrigin> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#Country> .
+<http://w3id.org/def/autoimmunedisease#hasCountryOfOrigin> <http://www.w3.org/2000/01/rdf-schema#label> "has country of origin" .
+# 
+# http://w3id.org/def/autoimmunedisease#hasDiagnosisMethods
+<http://w3id.org/def/autoimmunedisease#hasDiagnosisMethods> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#hasDiagnosisMethods> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#AutoimmuneDisease> .
+<http://w3id.org/def/autoimmunedisease#hasDiagnosisMethods> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#DiagnosisMethods> .
+<http://w3id.org/def/autoimmunedisease#hasDiagnosisMethods> <http://www.w3.org/2000/01/rdf-schema#label> "has diagnosis methods" .
+# 
+# http://w3id.org/def/autoimmunedisease#hasMESHTerm
+<http://w3id.org/def/autoimmunedisease#hasMESHTerm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#hasMESHTerm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/def/autoimmunedisease#hasMESHTerm> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#AutoimmuneDisease> .
+<http://w3id.org/def/autoimmunedisease#hasMESHTerm> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#MESHTerm> .
+<http://w3id.org/def/autoimmunedisease#hasMESHTerm> <http://www.w3.org/2000/01/rdf-schema#label> "has MESH term" .
+# 
+# http://w3id.org/def/autoimmunedisease#hasMolecularFunction
+<http://w3id.org/def/autoimmunedisease#hasMolecularFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#hasMolecularFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.uniprot.org/core/Protein> .
+<http://w3id.org/def/autoimmunedisease#hasMolecularFunction> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#MolecularFunction> .
+<http://w3id.org/def/autoimmunedisease#hasMolecularFunction> <http://www.w3.org/2000/01/rdf-schema#label> "has molecular function" .
+# 
+# http://w3id.org/def/autoimmunedisease#hasName
+<http://w3id.org/def/autoimmunedisease#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#Drug> .
+<http://w3id.org/def/autoimmunedisease#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#CommercialName> .
+<http://w3id.org/def/autoimmunedisease#hasName> <http://www.w3.org/2000/01/rdf-schema#label> "has name" .
+# 
+# http://w3id.org/def/autoimmunedisease#hasResponsibleImmuneCell
+<http://w3id.org/def/autoimmunedisease#hasResponsibleImmuneCell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#hasResponsibleImmuneCell> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#AutoimmuneDisease> .
+<http://w3id.org/def/autoimmunedisease#hasResponsibleImmuneCell> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#ImmuneCell> .
+<http://w3id.org/def/autoimmunedisease#hasResponsibleImmuneCell> <http://www.w3.org/2000/01/rdf-schema#label> "has responsible immune cell" .
+# 
+# http://w3id.org/def/autoimmunedisease#hasSymptoms
+<http://w3id.org/def/autoimmunedisease#hasSymptoms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#hasSymptoms> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#AutoimmuneDisease> .
+<http://w3id.org/def/autoimmunedisease#hasSymptoms> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#Symptoms> .
+<http://w3id.org/def/autoimmunedisease#hasSymptoms> <http://www.w3.org/2000/01/rdf-schema#label> "has symptoms" .
+# 
+# http://w3id.org/def/autoimmunedisease#includeAutoimmuneDisease
+<http://w3id.org/def/autoimmunedisease#includeAutoimmuneDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#includeAutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType> .
+<http://w3id.org/def/autoimmunedisease#includeAutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#AutoimmuneDisease> .
+<http://w3id.org/def/autoimmunedisease#includeAutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#label> "include autoimmune disease" .
+# 
+# http://w3id.org/def/autoimmunedisease#interactsWithReceptor
+<http://w3id.org/def/autoimmunedisease#interactsWithReceptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#interactsWithReceptor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#SignalMolecule> .
+<http://w3id.org/def/autoimmunedisease#interactsWithReceptor> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#Receptor> .
+<http://w3id.org/def/autoimmunedisease#interactsWithReceptor> <http://www.w3.org/2000/01/rdf-schema#label> "interacts with receptor" .
+# 
+# http://w3id.org/def/autoimmunedisease#interactsWithTarget
+<http://w3id.org/def/autoimmunedisease#interactsWithTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#interactsWithTarget> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#Drug> .
+<http://w3id.org/def/autoimmunedisease#interactsWithTarget> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#TherapeuticTarget> .
+<http://w3id.org/def/autoimmunedisease#interactsWithTarget> <http://www.w3.org/2000/01/rdf-schema#label> "interacts with target" .
+# 
+# http://w3id.org/def/autoimmunedisease#involvedInBiologicalProcess
+<http://w3id.org/def/autoimmunedisease#involvedInBiologicalProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#involvedInBiologicalProcess> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.uniprot.org/core/Protein> .
+<http://w3id.org/def/autoimmunedisease#involvedInBiologicalProcess> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#BiologicalProcess> .
+<http://w3id.org/def/autoimmunedisease#involvedInBiologicalProcess> <http://www.w3.org/2000/01/rdf-schema#label> "involved in biological process" .
+# 
+# http://w3id.org/def/autoimmunedisease#involvedInPathway
+<http://w3id.org/def/autoimmunedisease#involvedInPathway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#involvedInPathway> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.uniprot.org/core/Protein> .
+<http://w3id.org/def/autoimmunedisease#involvedInPathway> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.uniprot.org/core/Pathway> .
+<http://w3id.org/def/autoimmunedisease#involvedInPathway> <http://www.w3.org/2000/01/rdf-schema#label> "involved in pathway" .
+# 
+# http://w3id.org/def/autoimmunedisease#isTreatedBy
+<http://w3id.org/def/autoimmunedisease#isTreatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#isTreatedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://w3id.org/def/autoimmunedisease#treatsDisease> .
+<http://w3id.org/def/autoimmunedisease#isTreatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#AutoimmuneDisease> .
+<http://w3id.org/def/autoimmunedisease#isTreatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#Drug> .
+<http://w3id.org/def/autoimmunedisease#isTreatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is treated by" .
+# 
+# http://w3id.org/def/autoimmunedisease#manufacturedBy
+<http://w3id.org/def/autoimmunedisease#manufacturedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#manufacturedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://w3id.org/def/autoimmunedisease#manufactures> .
+<http://w3id.org/def/autoimmunedisease#manufacturedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#Drug> .
+<http://w3id.org/def/autoimmunedisease#manufacturedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#PharmaceuticCompany> .
+<http://w3id.org/def/autoimmunedisease#manufacturedBy> <http://www.w3.org/2000/01/rdf-schema#label> "manufactured by" .
+# 
+# http://w3id.org/def/autoimmunedisease#manufactures
+<http://w3id.org/def/autoimmunedisease#manufactures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#manufactures> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#PharmaceuticCompany> .
+<http://w3id.org/def/autoimmunedisease#manufactures> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#Drug> .
+<http://w3id.org/def/autoimmunedisease#manufactures> <http://www.w3.org/2000/01/rdf-schema#label> "manufactures" .
+# 
+# http://w3id.org/def/autoimmunedisease#mayCauseSecondaryEffects
+<http://w3id.org/def/autoimmunedisease#mayCauseSecondaryEffects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#mayCauseSecondaryEffects> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#Drug> .
+<http://w3id.org/def/autoimmunedisease#mayCauseSecondaryEffects> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#SecondaryEffect> .
+<http://w3id.org/def/autoimmunedisease#mayCauseSecondaryEffects> <http://www.w3.org/2000/01/rdf-schema#label> "may cause secondary effects" .
+# 
+# http://w3id.org/def/autoimmunedisease#presentInBodySystem
+<http://w3id.org/def/autoimmunedisease#presentInBodySystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#presentInBodySystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#Organ> .
+<http://w3id.org/def/autoimmunedisease#presentInBodySystem> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#BodySystem> .
+<http://w3id.org/def/autoimmunedisease#presentInBodySystem> <http://www.w3.org/2000/01/rdf-schema#label> "present in body system" .
+# 
+# http://w3id.org/def/autoimmunedisease#presentInCellType
+<http://w3id.org/def/autoimmunedisease#presentInCellType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#presentInCellType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#Receptor> .
+<http://w3id.org/def/autoimmunedisease#presentInCellType> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#CellType> .
+<http://w3id.org/def/autoimmunedisease#presentInCellType> <http://www.w3.org/2000/01/rdf-schema#label> "present in cell type" .
+# 
+# http://w3id.org/def/autoimmunedisease#presentInOrgan
+<http://w3id.org/def/autoimmunedisease#presentInOrgan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#presentInOrgan> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#Tissue> .
+<http://w3id.org/def/autoimmunedisease#presentInOrgan> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#Organ> .
+<http://w3id.org/def/autoimmunedisease#presentInOrgan> <http://www.w3.org/2000/01/rdf-schema#label> "present in organ" .
+# 
+# http://w3id.org/def/autoimmunedisease#presentInTissue
+<http://w3id.org/def/autoimmunedisease#presentInTissue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#presentInTissue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#CellType> .
+<http://w3id.org/def/autoimmunedisease#presentInTissue> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#Tissue> .
+<http://w3id.org/def/autoimmunedisease#presentInTissue> <http://www.w3.org/2000/01/rdf-schema#label> "present in tissue" .
+# 
+# http://w3id.org/def/autoimmunedisease#producesSignalMolecule
+<http://w3id.org/def/autoimmunedisease#producesSignalMolecule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#producesSignalMolecule> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#ImmuneCell> .
+<http://w3id.org/def/autoimmunedisease#producesSignalMolecule> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#SignalMolecule> .
+<http://w3id.org/def/autoimmunedisease#producesSignalMolecule> <http://www.w3.org/2000/01/rdf-schema#label> "produces signal molecule" .
+# 
+# http://w3id.org/def/autoimmunedisease#treatsDisease
+<http://w3id.org/def/autoimmunedisease#treatsDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/autoimmunedisease#treatsDisease> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#Drug> .
+<http://w3id.org/def/autoimmunedisease#treatsDisease> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/autoimmunedisease#AutoimmuneDisease> .
+<http://w3id.org/def/autoimmunedisease#treatsDisease> <http://www.w3.org/2000/01/rdf-schema#label> "treats disease" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/def/autoimmunedisease#Definition
+<http://w3id.org/def/autoimmunedisease#Definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://w3id.org/def/autoimmunedisease#Dosage
+<http://w3id.org/def/autoimmunedisease#Dosage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/def/autoimmunedisease#Dosage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/autoimmunedisease#Drug> .
+<http://w3id.org/def/autoimmunedisease#Dosage> <http://www.w3.org/2000/01/rdf-schema#label> "dosage" .
+# 
+# http://w3id.org/def/autoimmunedisease#FoundationYear
+<http://w3id.org/def/autoimmunedisease#FoundationYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.obolibrary.org/obo/DOID_4
+<http://purl.obolibrary.org/obo/DOID_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/DOID_4> <http://www.w3.org/2002/07/owl#equivalentClass> <http://w3id.org/def/autoimmunedisease#AutoimmuneDisease> .
+<http://purl.obolibrary.org/obo/DOID_4> <http://www.w3.org/2000/01/rdf-schema#label> "AutoimmuneDisease class from Human Disease Ontology" .
+# 
+# http://purl.obolibrary.org/obo/GO_0003674
+<http://purl.obolibrary.org/obo/GO_0003674> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/GO_0003674> <http://www.w3.org/2002/07/owl#equivalentClass> <http://w3id.org/def/autoimmunedisease#MolecularFunction> .
+<http://purl.obolibrary.org/obo/GO_0003674> <http://www.w3.org/2000/01/rdf-schema#label> "MolecularFunction class from Gene Ontology" .
+# 
+# http://purl.obolibrary.org/obo/GO_0008150
+<http://purl.obolibrary.org/obo/GO_0008150> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/GO_0008150> <http://www.w3.org/2002/07/owl#equivalentClass> <http://w3id.org/def/autoimmunedisease#BiologicalProcess> .
+<http://purl.obolibrary.org/obo/GO_0008150> <http://www.w3.org/2000/01/rdf-schema#label> "BiologicalProcess class from Gene Ontology" .
+# 
+# http://purl.uniprot.org/core/Gene
+<http://purl.uniprot.org/core/Gene> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.uniprot.org/core/Gene> <http://www.w3.org/2000/01/rdf-schema#label> "Gene" .
+# 
+# http://purl.uniprot.org/core/Pathway
+<http://purl.uniprot.org/core/Pathway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.uniprot.org/core/Pathway> <http://www.w3.org/2000/01/rdf-schema#label> "Pathway" .
+# 
+# http://purl.uniprot.org/core/Protein
+<http://purl.uniprot.org/core/Protein> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.uniprot.org/core/Protein> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/autoimmunedisease#MoleculeType> .
+<http://purl.uniprot.org/core/Protein> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/autoimmunedisease#hasMolecularFunction> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/def/autoimmunedisease#MolecularFunction> .
+<http://purl.uniprot.org/core/Protein> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/autoimmunedisease#involvedInBiologicalProcess> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/def/autoimmunedisease#BiologicalProcess> .
+<http://purl.uniprot.org/core/Protein> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/autoimmunedisease#involvedInPathway> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.uniprot.org/core/Pathway> .
+<http://purl.uniprot.org/core/Protein> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/autoimmunedisease#expressedBy> .
+_:genid4 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.uniprot.org/core/Gene> .
+<http://purl.uniprot.org/core/Protein> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/def/autoimmunedisease#Carbohydrate> .
+<http://purl.uniprot.org/core/Protein> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/def/autoimmunedisease#Lipid> .
+<http://purl.uniprot.org/core/Protein> <http://www.w3.org/2000/01/rdf-schema#label> "Protein" .
+# 
+# http://w3id.org/def/autoimmunedisease#ATCGroup
+<http://w3id.org/def/autoimmunedisease#ATCGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#ATCGroup> <http://www.w3.org/2000/01/rdf-schema#label> "ATC Group" .
+# 
+# http://w3id.org/def/autoimmunedisease#ActivePharmaceuticalIngredient
+<http://w3id.org/def/autoimmunedisease#ActivePharmaceuticalIngredient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#ActivePharmaceuticalIngredient> <http://www.w3.org/2000/01/rdf-schema#label> "Active Pharmaceutical Ingredient" .
+# 
+# http://w3id.org/def/autoimmunedisease#AdministrationRoute
+<http://w3id.org/def/autoimmunedisease#AdministrationRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#AdministrationRoute> <http://www.w3.org/2000/01/rdf-schema#label> "Administration Route" .
+# 
+# http://w3id.org/def/autoimmunedisease#Asociaciones
+<http://w3id.org/def/autoimmunedisease#Asociaciones> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#Asociaciones> <http://www.w3.org/2000/01/rdf-schema#label> "Asociaciones" .
+# 
+# http://w3id.org/def/autoimmunedisease#AutoimmuneDisease
+<http://w3id.org/def/autoimmunedisease#AutoimmuneDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#AutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/autoimmunedisease#hasAsociation> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/def/autoimmunedisease#Asociaciones> .
+<http://w3id.org/def/autoimmunedisease#AutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/autoimmunedisease#hasDiagnosisMethods> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/def/autoimmunedisease#DiagnosisMethods> .
+<http://w3id.org/def/autoimmunedisease#AutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/autoimmunedisease#hasSymptoms> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/def/autoimmunedisease#Symptoms> .
+<http://w3id.org/def/autoimmunedisease#AutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/autoimmunedisease#isTreatedBy> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/def/autoimmunedisease#Drug> .
+<http://w3id.org/def/autoimmunedisease#AutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/autoimmunedisease#hasAutoimmuneDiseaseType> .
+_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType> .
+<http://w3id.org/def/autoimmunedisease#AutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/autoimmunedisease#hasResponsibleImmuneCell> .
+_:genid10 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/def/autoimmunedisease#ImmuneCell> .
+<http://w3id.org/def/autoimmunedisease#AutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#label> "Autoimmune Disease" .
+# 
+# http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType
+<http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType> <http://www.w3.org/2000/01/rdf-schema#label> "Autoimmune Disease Type" .
+# 
+# http://w3id.org/def/autoimmunedisease#BiologicalProcess
+<http://w3id.org/def/autoimmunedisease#BiologicalProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#BiologicalProcess> <http://www.w3.org/2000/01/rdf-schema#label> "Biological Process" .
+# 
+# http://w3id.org/def/autoimmunedisease#BloodAutoimmuneDisease
+<http://w3id.org/def/autoimmunedisease#BloodAutoimmuneDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#BloodAutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType> .
+<http://w3id.org/def/autoimmunedisease#BloodAutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#label> "Blood Autoimmune Disease" .
+# 
+# http://w3id.org/def/autoimmunedisease#BodySystem
+<http://w3id.org/def/autoimmunedisease#BodySystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#BodySystem> <http://www.w3.org/2000/01/rdf-schema#label> "Body System" .
+# 
+# http://w3id.org/def/autoimmunedisease#Carbohydrate
+<http://w3id.org/def/autoimmunedisease#Carbohydrate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#Carbohydrate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/autoimmunedisease#MoleculeType> .
+<http://w3id.org/def/autoimmunedisease#Carbohydrate> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/def/autoimmunedisease#Lipid> .
+<http://w3id.org/def/autoimmunedisease#Carbohydrate> <http://www.w3.org/2000/01/rdf-schema#label> "Carbohydrate" .
+# 
+# http://w3id.org/def/autoimmunedisease#CardiovascularAutoimmuneDisease
+<http://w3id.org/def/autoimmunedisease#CardiovascularAutoimmuneDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#CardiovascularAutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType> .
+<http://w3id.org/def/autoimmunedisease#CardiovascularAutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#label> "Cardiovascular Autoimmune Disease" .
+# 
+# http://w3id.org/def/autoimmunedisease#CellType
+<http://w3id.org/def/autoimmunedisease#CellType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#CellType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/autoimmunedisease#presentInTissue> .
+_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/def/autoimmunedisease#Tissue> .
+<http://w3id.org/def/autoimmunedisease#CellType> <http://www.w3.org/2000/01/rdf-schema#label> "Cell Type" .
+# 
+# http://w3id.org/def/autoimmunedisease#CentralNervousAutoimmuneDisease
+<http://w3id.org/def/autoimmunedisease#CentralNervousAutoimmuneDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#CentralNervousAutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType> .
+<http://w3id.org/def/autoimmunedisease#CentralNervousAutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#label> "Central Nervous Autoimmune Disease" .
+# 
+# http://w3id.org/def/autoimmunedisease#ChebiID
+<http://w3id.org/def/autoimmunedisease#ChebiID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#ChebiID> <http://www.w3.org/2000/01/rdf-schema#label> "ChEBI ID" .
+# 
+# http://w3id.org/def/autoimmunedisease#CommercialName
+<http://w3id.org/def/autoimmunedisease#CommercialName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#CommercialName> <http://www.w3.org/2000/01/rdf-schema#label> "Commercial Name" .
+# 
+# http://w3id.org/def/autoimmunedisease#Company
+<http://w3id.org/def/autoimmunedisease#Company> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#Company> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/autoimmunedisease#hasCountryOfOrigin> .
+_:genid12 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/def/autoimmunedisease#Country> .
+<http://w3id.org/def/autoimmunedisease#Company> <http://www.w3.org/2000/01/rdf-schema#label> "Company" .
+# 
+# http://w3id.org/def/autoimmunedisease#Country
+<http://w3id.org/def/autoimmunedisease#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country" .
+# 
+# http://w3id.org/def/autoimmunedisease#DiagnosisMethods
+<http://w3id.org/def/autoimmunedisease#DiagnosisMethods> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#DiagnosisMethods> <http://www.w3.org/2000/01/rdf-schema#label> "Diagnosis Methods" .
+# 
+# http://w3id.org/def/autoimmunedisease#Drug
+<http://w3id.org/def/autoimmunedisease#Drug> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#Drug> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/autoimmunedisease#mayCauseSecondaryEffects> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/def/autoimmunedisease#SecondaryEffect> .
+<http://w3id.org/def/autoimmunedisease#Drug> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/autoimmunedisease#administeredIn> .
+_:genid14 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/def/autoimmunedisease#AdministrationRoute> .
+<http://w3id.org/def/autoimmunedisease#Drug> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/autoimmunedisease#composedByActiveIngredient> .
+_:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/def/autoimmunedisease#ActivePharmaceuticalIngredient> .
+<http://w3id.org/def/autoimmunedisease#Drug> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/autoimmunedisease#hasName> .
+_:genid16 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/def/autoimmunedisease#CommercialName> .
+<http://w3id.org/def/autoimmunedisease#Drug> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/autoimmunedisease#interactsWithTarget> .
+_:genid17 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/def/autoimmunedisease#TherapeuticTarget> .
+<http://w3id.org/def/autoimmunedisease#Drug> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/autoimmunedisease#manufacturedBy> .
+_:genid18 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/def/autoimmunedisease#PharmaceuticCompany> .
+<http://w3id.org/def/autoimmunedisease#Drug> <http://www.w3.org/2000/01/rdf-schema#label> "Drug" .
+# 
+# http://w3id.org/def/autoimmunedisease#EndocrineAutoimmuneDisease
+<http://w3id.org/def/autoimmunedisease#EndocrineAutoimmuneDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#EndocrineAutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType> .
+<http://w3id.org/def/autoimmunedisease#EndocrineAutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#label> "Endocrine Autoimmune Disease" .
+# 
+# http://w3id.org/def/autoimmunedisease#ExocrineAutoimmuneDisease
+<http://w3id.org/def/autoimmunedisease#ExocrineAutoimmuneDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#ExocrineAutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType> .
+<http://w3id.org/def/autoimmunedisease#ExocrineAutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#label> "Exocrine Autoimmune Disease" .
+# 
+# http://w3id.org/def/autoimmunedisease#EyesEarNoseThroatAutoimmuneDisease
+<http://w3id.org/def/autoimmunedisease#EyesEarNoseThroatAutoimmuneDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#EyesEarNoseThroatAutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType> .
+<http://w3id.org/def/autoimmunedisease#EyesEarNoseThroatAutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#label> "Eyes Ear Nose Throat Autoimmune Disease" .
+# 
+# http://w3id.org/def/autoimmunedisease#GastrointestinalAutoimmuneDisease
+<http://w3id.org/def/autoimmunedisease#GastrointestinalAutoimmuneDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#GastrointestinalAutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType> .
+<http://w3id.org/def/autoimmunedisease#GastrointestinalAutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#label> "Gastrointestinal Autoimmune Disease" .
+# 
+# http://w3id.org/def/autoimmunedisease#ImmuneCell
+<http://w3id.org/def/autoimmunedisease#ImmuneCell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#ImmuneCell> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/autoimmunedisease#producesSignalMolecule> .
+_:genid19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/def/autoimmunedisease#SignalMolecule> .
+<http://w3id.org/def/autoimmunedisease#ImmuneCell> <http://www.w3.org/2000/01/rdf-schema#label> "Immune Cell" .
+# 
+# http://w3id.org/def/autoimmunedisease#Lipid
+<http://w3id.org/def/autoimmunedisease#Lipid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#Lipid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/autoimmunedisease#MoleculeType> .
+<http://w3id.org/def/autoimmunedisease#Lipid> <http://www.w3.org/2000/01/rdf-schema#label> "Lipid" .
+# 
+# http://w3id.org/def/autoimmunedisease#MESHTerm
+<http://w3id.org/def/autoimmunedisease#MESHTerm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#MESHTerm> <http://www.w3.org/2000/01/rdf-schema#label> "MESH Term" .
+# 
+# http://w3id.org/def/autoimmunedisease#MolecularFunction
+<http://w3id.org/def/autoimmunedisease#MolecularFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#MolecularFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Molecular Function" .
+# 
+# http://w3id.org/def/autoimmunedisease#MoleculeType
+<http://w3id.org/def/autoimmunedisease#MoleculeType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#MoleculeType> <http://www.w3.org/2000/01/rdf-schema#label> "Molecule Type" .
+# 
+# http://w3id.org/def/autoimmunedisease#MusculoskeletalAutoimmuneDisease
+<http://w3id.org/def/autoimmunedisease#MusculoskeletalAutoimmuneDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#MusculoskeletalAutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType> .
+<http://w3id.org/def/autoimmunedisease#MusculoskeletalAutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#label> "Musculoskeletal Autoimmune Disease" .
+# 
+# http://w3id.org/def/autoimmunedisease#Organ
+<http://w3id.org/def/autoimmunedisease#Organ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#Organ> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/autoimmunedisease#presentInBodySystem> .
+_:genid20 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/def/autoimmunedisease#BodySystem> .
+<http://w3id.org/def/autoimmunedisease#Organ> <http://www.w3.org/2000/01/rdf-schema#label> "Organ" .
+# 
+# http://w3id.org/def/autoimmunedisease#PeripheralNervousAutoimmuneDisease
+<http://w3id.org/def/autoimmunedisease#PeripheralNervousAutoimmuneDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#PeripheralNervousAutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType> .
+<http://w3id.org/def/autoimmunedisease#PeripheralNervousAutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#label> "Peripheral Nervous Autoimmune Disease" .
+# 
+# http://w3id.org/def/autoimmunedisease#PharmaceuticCompany
+<http://w3id.org/def/autoimmunedisease#PharmaceuticCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#PharmaceuticCompany> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/autoimmunedisease#Company> .
+<http://w3id.org/def/autoimmunedisease#PharmaceuticCompany> <http://www.w3.org/2000/01/rdf-schema#label> "Pharmaceutic Company" .
+# 
+# http://w3id.org/def/autoimmunedisease#Receptor
+<http://w3id.org/def/autoimmunedisease#Receptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#Receptor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.uniprot.org/core/Protein> .
+<http://w3id.org/def/autoimmunedisease#Receptor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/autoimmunedisease#presentInCellType> .
+_:genid21 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/def/autoimmunedisease#CellType> .
+<http://w3id.org/def/autoimmunedisease#Receptor> <http://www.w3.org/2000/01/rdf-schema#label> "Receptor" .
+# 
+# http://w3id.org/def/autoimmunedisease#SecondaryEffect
+<http://w3id.org/def/autoimmunedisease#SecondaryEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#SecondaryEffect> <http://www.w3.org/2000/01/rdf-schema#label> "Secondary Effect" .
+# 
+# http://w3id.org/def/autoimmunedisease#SignalMolecule
+<http://w3id.org/def/autoimmunedisease#SignalMolecule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#SignalMolecule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/autoimmunedisease#interactsWithReceptor> .
+_:genid22 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/def/autoimmunedisease#Receptor> .
+<http://w3id.org/def/autoimmunedisease#SignalMolecule> <http://www.w3.org/2000/01/rdf-schema#label> "Signal Molecule" .
+# 
+# http://w3id.org/def/autoimmunedisease#SkinConnectiveTissueAutoimmuneDisease
+<http://w3id.org/def/autoimmunedisease#SkinConnectiveTissueAutoimmuneDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#SkinConnectiveTissueAutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType> .
+<http://w3id.org/def/autoimmunedisease#SkinConnectiveTissueAutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#label> "Skin Connective Tissue Autoimmune Disease" .
+# 
+# http://w3id.org/def/autoimmunedisease#Symptoms
+<http://w3id.org/def/autoimmunedisease#Symptoms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#Symptoms> <http://www.w3.org/2000/01/rdf-schema#label> "Symptoms" .
+# 
+# http://w3id.org/def/autoimmunedisease#TherapeuticTarget
+<http://w3id.org/def/autoimmunedisease#TherapeuticTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#TherapeuticTarget> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/autoimmunedisease#belongsToMoleculeType> .
+_:genid23 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/def/autoimmunedisease#MoleculeType> .
+<http://w3id.org/def/autoimmunedisease#TherapeuticTarget> <http://www.w3.org/2000/01/rdf-schema#label> "Therapeutic Target" .
+# 
+# http://w3id.org/def/autoimmunedisease#Tissue
+<http://w3id.org/def/autoimmunedisease#Tissue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#Tissue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/autoimmunedisease#presentInOrgan> .
+_:genid24 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/def/autoimmunedisease#Organ> .
+<http://w3id.org/def/autoimmunedisease#Tissue> <http://www.w3.org/2000/01/rdf-schema#label> "Tissue" .
+# 
+# http://w3id.org/def/autoimmunedisease#UrogenitalAutoimmuneDisease
+<http://w3id.org/def/autoimmunedisease#UrogenitalAutoimmuneDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/autoimmunedisease#UrogenitalAutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType> .
+<http://w3id.org/def/autoimmunedisease#UrogenitalAutoimmuneDisease> <http://www.w3.org/2000/01/rdf-schema#label> "Urogenital Autoimmune Disease" .
+# 
+# http://www.w3.org/2001/XMLSchema#xsd
+<http://www.w3.org/2001/XMLSchema#xsd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/def/autoimmunedisease#BloodSystem
+<http://w3id.org/def/autoimmunedisease#BloodSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/autoimmunedisease#BloodSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/def/autoimmunedisease#BodySystem> .
+# 
+# http://w3id.org/def/autoimmunedisease#CardiovascularSystem
+<http://w3id.org/def/autoimmunedisease#CardiovascularSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/autoimmunedisease#CardiovascularSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/def/autoimmunedisease#BodySystem> .
+# 
+# http://w3id.org/def/autoimmunedisease#CentralNervousSystem
+<http://w3id.org/def/autoimmunedisease#CentralNervousSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/autoimmunedisease#CentralNervousSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/def/autoimmunedisease#BodySystem> .
+# 
+# http://w3id.org/def/autoimmunedisease#EndocrineSystem
+<http://w3id.org/def/autoimmunedisease#EndocrineSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/autoimmunedisease#EndocrineSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/def/autoimmunedisease#BodySystem> .
+# 
+# http://w3id.org/def/autoimmunedisease#ExocrineSystem
+<http://w3id.org/def/autoimmunedisease#ExocrineSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/autoimmunedisease#ExocrineSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/def/autoimmunedisease#BodySystem> .
+# 
+# http://w3id.org/def/autoimmunedisease#EyesEarNoseThroatSystem
+<http://w3id.org/def/autoimmunedisease#EyesEarNoseThroatSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/autoimmunedisease#EyesEarNoseThroatSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/def/autoimmunedisease#BodySystem> .
+# 
+# http://w3id.org/def/autoimmunedisease#GastrointestinalSystem
+<http://w3id.org/def/autoimmunedisease#GastrointestinalSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/autoimmunedisease#GastrointestinalSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/def/autoimmunedisease#BodySystem> .
+# 
+# http://w3id.org/def/autoimmunedisease#MusculoskeletalSystem
+<http://w3id.org/def/autoimmunedisease#MusculoskeletalSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/autoimmunedisease#MusculoskeletalSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/def/autoimmunedisease#BodySystem> .
+# 
+# http://w3id.org/def/autoimmunedisease#PeripheralNervousSystem
+<http://w3id.org/def/autoimmunedisease#PeripheralNervousSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/autoimmunedisease#PeripheralNervousSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/def/autoimmunedisease#BodySystem> .
+# 
+# http://w3id.org/def/autoimmunedisease#SkinConnectiveTissueSystem
+<http://w3id.org/def/autoimmunedisease#SkinConnectiveTissueSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/autoimmunedisease#SkinConnectiveTissueSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/def/autoimmunedisease#BodySystem> .
+# 
+# http://w3id.org/def/autoimmunedisease#UrogenitalSystem
+<http://w3id.org/def/autoimmunedisease#UrogenitalSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/autoimmunedisease#UrogenitalSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/def/autoimmunedisease#BodySystem> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://w3id.org/def/autoimmunedisease#Definition> <http://www.w3.org/2000/01/rdf-schema#label> "definition" .
+# 
+<http://w3id.org/def/autoimmunedisease#FoundationYear> <http://www.w3.org/2000/01/rdf-schema#label> "foundation year" .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
