@@ -1,0 +1,1199 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#hasMolecularFunction"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#MolecularFunction"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#ImmuneCell"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#hasResponsibleImmuneCell"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Tissue"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#presentInTissue"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Country"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#hasCountryOfOrigin"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#mayCauseSecondaryEffects"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#SecondaryEffect"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#AdministrationRoute"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#administeredIn"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#ActivePharmaceuticalIngredient"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#composedByActiveIngredient"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#CommercialName"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#hasName"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#TherapeuticTarget"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#interactsWithTarget"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#PharmaceuticCompany"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#manufacturedBy"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#SignalMolecule"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#producesSignalMolecule"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#involvedInBiologicalProcess"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#BiologicalProcess"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#BodySystem"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#presentInBodySystem"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#CellType"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#presentInCellType"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Receptor"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#interactsWithReceptor"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#MoleculeType"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#belongsToMoleculeType"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Organ"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#presentInOrgan"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#involvedInPathway"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.uniprot.org/core/Pathway"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://purl.uniprot.org/core/Gene"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#expressedBy"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#hasAsociation"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Asociaciones"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#hasDiagnosisMethods"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#DiagnosisMethods"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#hasSymptoms"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Symptoms"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#isTreatedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Drug"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#hasAutoimmuneDiseaseType"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/DOID_4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AutoimmuneDisease class from Human Disease Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDisease"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/GO_0003674",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MolecularFunction class from Gene Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#MolecularFunction"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/GO_0008150",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BiologicalProcess class from Gene Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#BiologicalProcess"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.uniprot.org/core/Gene",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Gene"
+  } ]
+}, {
+  "@id" : "http://purl.uniprot.org/core/Pathway",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Pathway"
+  } ]
+}, {
+  "@id" : "http://purl.uniprot.org/core/Protein",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Protein"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#MoleculeType"
+  }, {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid4"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Carbohydrate"
+  }, {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Lipid"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Guillermo Chumaceiro López"
+  }, {
+    "@value" : "Juan Carlos Carrasco Sánchez"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Ontology representing Immune Diseases and the drugs used to treat them"
+  } ],
+  "http://purl.org/dc/elements/1.1/rights" : [ {
+    "@value" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "Autoimmune Disease Onthology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.0.1"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#ATCGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ATC Group"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#ActivePharmaceuticalIngredient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Active Pharmaceutical Ingredient"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#AdministrationRoute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Administration Route"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#Asociaciones",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Asociaciones"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDisease",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Autoimmune Disease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  }, {
+    "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  }, {
+    "@id" : "_:genid9"
+  }, {
+    "@id" : "_:genid10"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Autoimmune Disease Type"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#BiologicalProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Biological Process"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#BloodAutoimmuneDisease",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Blood Autoimmune Disease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#BloodSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/def/autoimmunedisease#BodySystem" ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#BodySystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Body System"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#Carbohydrate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Carbohydrate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#MoleculeType"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Lipid"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#CardiovascularAutoimmuneDisease",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cardiovascular Autoimmune Disease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#CardiovascularSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/def/autoimmunedisease#BodySystem" ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#CellType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cell Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid11"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#CentralNervousAutoimmuneDisease",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Central Nervous Autoimmune Disease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#CentralNervousSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/def/autoimmunedisease#BodySystem" ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#ChebiID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ChEBI ID"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#CommercialName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Commercial Name"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#Company",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid12"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#Country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Country"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#Definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDisease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "definition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#xsd"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#DiagnosisMethods",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Diagnosis Methods"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#Dosage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Drug"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "dosage"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#Drug",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Drug"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid13"
+  }, {
+    "@id" : "_:genid14"
+  }, {
+    "@id" : "_:genid15"
+  }, {
+    "@id" : "_:genid16"
+  }, {
+    "@id" : "_:genid17"
+  }, {
+    "@id" : "_:genid18"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#EndocrineAutoimmuneDisease",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Endocrine Autoimmune Disease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#EndocrineSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/def/autoimmunedisease#BodySystem" ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#ExocrineAutoimmuneDisease",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Exocrine Autoimmune Disease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#ExocrineSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/def/autoimmunedisease#BodySystem" ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#EyesEarNoseThroatAutoimmuneDisease",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Eyes Ear Nose Throat Autoimmune Disease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#EyesEarNoseThroatSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/def/autoimmunedisease#BodySystem" ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#FoundationYear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "foundation year"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#xsd"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#GastrointestinalAutoimmuneDisease",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Gastrointestinal Autoimmune Disease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#GastrointestinalSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/def/autoimmunedisease#BodySystem" ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#ImmuneCell",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Immune Cell"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid19"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#Lipid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Lipid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#MoleculeType"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#MESHTerm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MESH Term"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#MESHTermOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#MESHTerm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MESH term of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDisease"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#hasMESHTerm"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#MolecularFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Molecular Function"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#MoleculeType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Molecule Type"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#MusculoskeletalAutoimmuneDisease",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Musculoskeletal Autoimmune Disease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#MusculoskeletalSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/def/autoimmunedisease#BodySystem" ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#Organ",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Organ"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid20"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#PeripheralNervousAutoimmuneDisease",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Peripheral Nervous Autoimmune Disease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#PeripheralNervousSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/def/autoimmunedisease#BodySystem" ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#PharmaceuticCompany",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Pharmaceutic Company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Company"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#Receptor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Receptor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.uniprot.org/core/Protein"
+  }, {
+    "@id" : "_:genid21"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#SecondaryEffect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Secondary Effect"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#SignalMolecule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Signal Molecule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid22"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#SkinConnectiveTissueAutoimmuneDisease",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Skin Connective Tissue Autoimmune Disease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#SkinConnectiveTissueSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/def/autoimmunedisease#BodySystem" ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#Symptoms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Symptoms"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#TherapeuticTarget",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Therapeutic Target"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid23"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#Tissue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tissue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid24"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#UrogenitalAutoimmuneDisease",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Urogenital Autoimmune Disease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#UrogenitalSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/def/autoimmunedisease#BodySystem" ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#administeredIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Drug"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "administered in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#AdministrationRoute"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#affectsBloodSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#BloodAutoimmuneDisease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "affects blood system"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#affectsCardiovascularSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#CardiovascularAutoimmuneDisease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "affects cardiovascular system"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#affectsCentralNervousSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#CentralNervousAutoimmuneDisease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "affects central nervous system"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#affectsEndocrineSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#EndocrineAutoimmuneDisease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "affects endocrine system"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#affectsExocrineSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#ExocrineAutoimmuneDisease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "affects exocrine system"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#affectsEyesEarNoseThroatSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#EyesEarNoseThroatAutoimmuneDisease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "affects eyes ear nose throat system"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#affectsGastrointestinalSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#GastrointestinalAutoimmuneDisease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "affects gastrointestinal system"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#affectsMuscoloskeletalSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#MusculoskeletalAutoimmuneDisease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "affects muscoloskeletal system"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#affectsPeripheralNervousSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#PeripheralNervousAutoimmuneDisease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "affects peripheral nervous system"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#affectsSkinConnectiveTissueSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#SkinConnectiveTissueAutoimmuneDisease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "affects skin connective tissue system"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#affectsUrogenitalSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#UrogenitalAutoimmuneDisease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "affects urogenital system"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#belongsToATCGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Drug"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "belongs to ATC group"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#ATCGroup"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#belongsToMoleculeType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#TherapeuticTarget"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "belongs to molecule type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#MoleculeType"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#composedByActiveIngredient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Drug"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "composed by active ingredient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#ActivePharmaceuticalIngredient"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#expressedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.uniprot.org/core/Protein"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "expressed by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.uniprot.org/core/Gene"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#hasAsociation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDisease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has asociation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Asociaciones"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#hasAutoimmuneDiseaseType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDisease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has autoimmune disease type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#includeAutoimmuneDisease"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#hasChebiID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Drug"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has chEBI ID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#ChebiID"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#hasCountryOfOrigin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has country of origin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Country"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#hasDiagnosisMethods",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDisease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has diagnosis methods"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#DiagnosisMethods"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#hasMESHTerm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDisease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has MESH term"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#MESHTerm"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#hasMolecularFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.uniprot.org/core/Protein"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has molecular function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#MolecularFunction"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#hasName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Drug"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#CommercialName"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#hasResponsibleImmuneCell",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDisease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has responsible immune cell"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#ImmuneCell"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#hasSymptoms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDisease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has symptoms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Symptoms"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#includeAutoimmuneDisease",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "include autoimmune disease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDisease"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#interactsWithReceptor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#SignalMolecule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "interacts with receptor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Receptor"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#interactsWithTarget",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Drug"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "interacts with target"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#TherapeuticTarget"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#involvedInBiologicalProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.uniprot.org/core/Protein"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "involved in biological process"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#BiologicalProcess"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#involvedInPathway",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.uniprot.org/core/Protein"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "involved in pathway"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.uniprot.org/core/Pathway"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#isTreatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDisease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is treated by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Drug"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#treatsDisease"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#manufacturedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Drug"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "manufactured by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#PharmaceuticCompany"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#manufactures"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#manufactures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#PharmaceuticCompany"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "manufactures"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Drug"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#mayCauseSecondaryEffects",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Drug"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "may cause secondary effects"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#SecondaryEffect"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#presentInBodySystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Organ"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "present in body system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#BodySystem"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#presentInCellType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Receptor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "present in cell type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#CellType"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#presentInOrgan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Tissue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "present in organ"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Organ"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#presentInTissue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#CellType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "present in tissue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Tissue"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#producesSignalMolecule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#ImmuneCell"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "produces signal molecule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#SignalMolecule"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/autoimmunedisease#treatsDisease",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#Drug"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "treats disease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDisease"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#xsd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+} ]

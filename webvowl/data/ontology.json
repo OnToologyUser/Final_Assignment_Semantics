@@ -1,0 +1,2000 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://w3id.org/def/autoimmunedisease", "http://purl.uniprot.org/core", "http://purl.obolibrary.org/obo", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "undefined" : "Autoimmune Disease Onthology"
+    },
+    "iri" : "http://w3id.org/def/autoimmunedisease#",
+    "version" : "0.0.1",
+    "author" : [ "Guillermo Chumaceiro López", "Juan Carlos Carrasco Sánchez" ],
+    "description" : {
+      "undefined" : "Ontology representing Immune Diseases and the drugs used to treat them"
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Juan Carlos Carrasco Sánchez",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Guillermo Chumaceiro López",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.0.1",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Autoimmune Disease Onthology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "16",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "6",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "32",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "48",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "99",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "103",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "112",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "113",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "114",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "45",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "38",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "72",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "68",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "120",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "136",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "117",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "0",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#UrogenitalAutoimmuneDisease",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UrogenitalAutoimmuneDisease",
+      "undefined" : "Urogenital Autoimmune Disease"
+    },
+    "id" : "11",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "17",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "16",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "6",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/DOID_4",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DOID_4",
+      "undefined" : "AutoimmuneDisease class from Human Disease Ontology"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/GO_0003674",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GO_0003674",
+      "undefined" : "MolecularFunction class from Gene Ontology"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#SecondaryEffect",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SecondaryEffect",
+      "undefined" : "Secondary Effect"
+    },
+    "id" : "14"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#EndocrineAutoimmuneDisease",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EndocrineAutoimmuneDisease",
+      "undefined" : "Endocrine Autoimmune Disease"
+    },
+    "id" : "57",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#MoleculeType",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MoleculeType",
+      "undefined" : "Molecule Type"
+    },
+    "subClasses" : [ "58", "59", "60" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#Tissue",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tissue",
+      "undefined" : "Tissue"
+    },
+    "id" : "23"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#CellType",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CellType",
+      "undefined" : "Cell Type"
+    },
+    "id" : "29"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#Receptor",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Receptor",
+      "undefined" : "Receptor"
+    },
+    "id" : "21",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#MusculoskeletalAutoimmuneDisease",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MusculoskeletalAutoimmuneDisease",
+      "undefined" : "Musculoskeletal Autoimmune Disease"
+    },
+    "id" : "37",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#CentralNervousAutoimmuneDisease",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CentralNervousAutoimmuneDisease",
+      "undefined" : "Central Nervous Autoimmune Disease"
+    },
+    "id" : "44",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#DiagnosisMethods",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DiagnosisMethods",
+      "undefined" : "Diagnosis Methods"
+    },
+    "id" : "64"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#BloodAutoimmuneDisease",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BloodAutoimmuneDisease",
+      "undefined" : "Blood Autoimmune Disease"
+    },
+    "id" : "89",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#PharmaceuticCompany",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PharmaceuticCompany",
+      "undefined" : "Pharmaceutic Company"
+    },
+    "id" : "50",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "96",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#MolecularFunction",
+    "equivalent" : [ "48" ],
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MolecularFunction",
+      "undefined" : "Molecular Function"
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#ExocrineAutoimmuneDisease",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExocrineAutoimmuneDisease",
+      "undefined" : "Exocrine Autoimmune Disease"
+    },
+    "id" : "67",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "102",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "103",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDiseaseType",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AutoimmuneDiseaseType",
+      "undefined" : "Autoimmune Disease Type"
+    },
+    "subClasses" : [ "5", "88", "93", "67", "37", "44", "71", "105", "89", "57", "11" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#Carbohydrate",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Carbohydrate",
+      "undefined" : "Carbohydrate"
+    },
+    "id" : "59",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#ATCGroup",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ATCGroup",
+      "undefined" : "ATC Group"
+    },
+    "id" : "40"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#ImmuneCell",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImmuneCell",
+      "undefined" : "Immune Cell"
+    },
+    "id" : "26"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#EyesEarNoseThroatAutoimmuneDisease",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EyesEarNoseThroatAutoimmuneDisease",
+      "undefined" : "Eyes Ear Nose Throat Autoimmune Disease"
+    },
+    "id" : "5",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#SignalMolecule",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SignalMolecule",
+      "undefined" : "Signal Molecule"
+    },
+    "id" : "20"
+  }, {
+    "iri" : "http://purl.uniprot.org/core/Pathway",
+    "baseIri" : "http://purl.uniprot.org/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Pathway",
+      "undefined" : "Pathway"
+    },
+    "attributes" : [ "external" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "110",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "112",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "113",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "114",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "115",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "45",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "38",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "72",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "68",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#MESHTerm",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MESHTerm",
+      "undefined" : "MESH Term"
+    },
+    "id" : "107"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#ActivePharmaceuticalIngredient",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActivePharmaceuticalIngredient",
+      "undefined" : "Active Pharmaceutical Ingredient"
+    },
+    "id" : "47"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#Lipid",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Lipid",
+      "undefined" : "Lipid"
+    },
+    "id" : "58",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#GastrointestinalAutoimmuneDisease",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GastrointestinalAutoimmuneDisease",
+      "undefined" : "Gastrointestinal Autoimmune Disease"
+    },
+    "id" : "105",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#Company",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Company",
+      "undefined" : "Company"
+    },
+    "subClasses" : [ "50" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#Organ",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organ",
+      "undefined" : "Organ"
+    },
+    "id" : "24"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/GO_0008150",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GO_0008150",
+      "undefined" : "BiologicalProcess class from Gene Ontology"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#SkinConnectiveTissueAutoimmuneDisease",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SkinConnectiveTissueAutoimmuneDisease",
+      "undefined" : "Skin Connective Tissue Autoimmune Disease"
+    },
+    "id" : "93",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#Drug",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Drug",
+      "undefined" : "Drug"
+    },
+    "id" : "9"
+  }, {
+    "iri" : "http://purl.uniprot.org/core/Gene",
+    "baseIri" : "http://purl.uniprot.org/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Gene",
+      "undefined" : "Gene"
+    },
+    "attributes" : [ "external" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#CardiovascularAutoimmuneDisease",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CardiovascularAutoimmuneDisease",
+      "undefined" : "Cardiovascular Autoimmune Disease"
+    },
+    "id" : "71",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#xsd",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "xsd"
+    },
+    "attributes" : [ "external" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#BodySystem",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BodySystem",
+      "undefined" : "Body System"
+    },
+    "individuals" : [ {
+      "iri" : "http://w3id.org/def/autoimmunedisease#EyesEarNoseThroatSystem",
+      "baseIri" : "http://w3id.org/def/autoimmunedisease",
+      "labels" : {
+        "IRI-based" : "EyesEarNoseThroatSystem"
+      }
+    }, {
+      "iri" : "http://w3id.org/def/autoimmunedisease#PeripheralNervousSystem",
+      "baseIri" : "http://w3id.org/def/autoimmunedisease",
+      "labels" : {
+        "IRI-based" : "PeripheralNervousSystem"
+      }
+    }, {
+      "iri" : "http://w3id.org/def/autoimmunedisease#MusculoskeletalSystem",
+      "baseIri" : "http://w3id.org/def/autoimmunedisease",
+      "labels" : {
+        "IRI-based" : "MusculoskeletalSystem"
+      }
+    }, {
+      "iri" : "http://w3id.org/def/autoimmunedisease#CardiovascularSystem",
+      "baseIri" : "http://w3id.org/def/autoimmunedisease",
+      "labels" : {
+        "IRI-based" : "CardiovascularSystem"
+      }
+    }, {
+      "iri" : "http://w3id.org/def/autoimmunedisease#SkinConnectiveTissueSystem",
+      "baseIri" : "http://w3id.org/def/autoimmunedisease",
+      "labels" : {
+        "IRI-based" : "SkinConnectiveTissueSystem"
+      }
+    }, {
+      "iri" : "http://w3id.org/def/autoimmunedisease#EndocrineSystem",
+      "baseIri" : "http://w3id.org/def/autoimmunedisease",
+      "labels" : {
+        "IRI-based" : "EndocrineSystem"
+      }
+    }, {
+      "iri" : "http://w3id.org/def/autoimmunedisease#BloodSystem",
+      "baseIri" : "http://w3id.org/def/autoimmunedisease",
+      "labels" : {
+        "IRI-based" : "BloodSystem"
+      }
+    }, {
+      "iri" : "http://w3id.org/def/autoimmunedisease#ExocrineSystem",
+      "baseIri" : "http://w3id.org/def/autoimmunedisease",
+      "labels" : {
+        "IRI-based" : "ExocrineSystem"
+      }
+    }, {
+      "iri" : "http://w3id.org/def/autoimmunedisease#UrogenitalSystem",
+      "baseIri" : "http://w3id.org/def/autoimmunedisease",
+      "labels" : {
+        "IRI-based" : "UrogenitalSystem"
+      }
+    }, {
+      "iri" : "http://w3id.org/def/autoimmunedisease#GastrointestinalSystem",
+      "baseIri" : "http://w3id.org/def/autoimmunedisease",
+      "labels" : {
+        "IRI-based" : "GastrointestinalSystem"
+      }
+    }, {
+      "iri" : "http://w3id.org/def/autoimmunedisease#CentralNervousSystem",
+      "baseIri" : "http://w3id.org/def/autoimmunedisease",
+      "labels" : {
+        "IRI-based" : "CentralNervousSystem"
+      }
+    } ],
+    "id" : "31"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#ChebiID",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ChebiID",
+      "undefined" : "ChEBI ID"
+    },
+    "id" : "136"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#AutoimmuneDisease",
+    "equivalent" : [ "32" ],
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AutoimmuneDisease",
+      "undefined" : "Autoimmune Disease"
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#Country",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Country",
+      "undefined" : "Country"
+    },
+    "id" : "53"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#CommercialName",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CommercialName",
+      "undefined" : "Commercial Name"
+    },
+    "id" : "42"
+  }, {
+    "iri" : "http://purl.uniprot.org/core/Protein",
+    "baseIri" : "http://purl.uniprot.org/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Protein",
+      "undefined" : "Protein"
+    },
+    "subClasses" : [ "21" ],
+    "attributes" : [ "external" ],
+    "id" : "60",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#PeripheralNervousAutoimmuneDisease",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PeripheralNervousAutoimmuneDisease",
+      "undefined" : "Peripheral Nervous Autoimmune Disease"
+    },
+    "id" : "88",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#Symptoms",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Symptoms",
+      "undefined" : "Symptoms"
+    },
+    "id" : "117"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#BiologicalProcess",
+    "equivalent" : [ "120" ],
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BiologicalProcess",
+      "undefined" : "Biological Process"
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#Asociaciones",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Asociaciones",
+      "undefined" : "Asociaciones"
+    },
+    "id" : "74"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#AdministrationRoute",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AdministrationRoute",
+      "undefined" : "Administration Route"
+    },
+    "id" : "62"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#TherapeuticTarget",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TherapeuticTarget",
+      "undefined" : "Therapeutic Target"
+    },
+    "id" : "2"
+  } ],
+  "property" : [ {
+    "id" : "1",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "19",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "22",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "25",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "27",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "28",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "30",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "49",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "52",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "54",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "61",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "119",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "131",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "132",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "133",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "134",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "135",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "137",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "138",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "139",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "140",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "141",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "142",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "143",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "144",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "145",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "146",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "147",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "148",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "149",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "150",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://w3id.org/def/autoimmunedisease#belongsToMoleculeType",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "belongsToMoleculeType",
+      "undefined" : "belongs to molecule type"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#affectsEyesEarNoseThroatSystem",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "affectsEyesEarNoseThroatSystem",
+      "undefined" : "affects eyes ear nose throat system"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#isTreatedBy",
+    "inverse" : "10",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "isTreatedBy",
+      "undefined" : "is treated by"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#mayCauseSecondaryEffects",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "mayCauseSecondaryEffects",
+      "undefined" : "may cause secondary effects"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#affectsUrogenitalSystem",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "affectsUrogenitalSystem",
+      "undefined" : "affects urogenital system"
+    },
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#belongsToMoleculeType",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "belongsToMoleculeType",
+      "undefined" : "belongs to molecule type"
+    },
+    "domain" : "2",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#interactsWithReceptor",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "interactsWithReceptor",
+      "undefined" : "interacts with receptor"
+    },
+    "domain" : "20",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#presentInOrgan",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "presentInOrgan",
+      "undefined" : "present in organ"
+    },
+    "domain" : "23",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#producesSignalMolecule",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "producesSignalMolecule",
+      "undefined" : "produces signal molecule"
+    },
+    "domain" : "26",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#interactsWithTarget",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "interactsWithTarget",
+      "undefined" : "interacts with target"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#presentInCellType",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "presentInCellType",
+      "undefined" : "present in cell type"
+    },
+    "domain" : "21",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#presentInBodySystem",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "presentInBodySystem",
+      "undefined" : "present in body system"
+    },
+    "domain" : "24",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#FoundationYear",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "FoundationYear",
+      "undefined" : "foundation year"
+    },
+    "domain" : "34",
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#affectsMuscoloskeletalSystem",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "affectsMuscoloskeletalSystem",
+      "undefined" : "affects muscoloskeletal system"
+    },
+    "domain" : "37",
+    "attributes" : [ "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#belongsToATCGroup",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "belongsToATCGroup",
+      "undefined" : "belongs to ATC group"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "functional" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#hasName",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "hasName",
+      "undefined" : "has name"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#affectsCentralNervousSystem",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "affectsCentralNervousSystem",
+      "undefined" : "affects central nervous system"
+    },
+    "domain" : "44",
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#composedByActiveIngredient",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "composedByActiveIngredient",
+      "undefined" : "composed by active ingredient"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#manufacturedBy",
+    "inverse" : "51",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "manufacturedBy",
+      "undefined" : "manufactured by"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#hasCountryOfOrigin",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "hasCountryOfOrigin",
+      "undefined" : "has country of origin"
+    },
+    "domain" : "34",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#presentInTissue",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "presentInTissue",
+      "undefined" : "present in tissue"
+    },
+    "domain" : "29",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#presentInBodySystem",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "presentInBodySystem",
+      "undefined" : "present in body system"
+    },
+    "domain" : "24",
+    "attributes" : [ "object" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#mayCauseSecondaryEffects",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "mayCauseSecondaryEffects",
+      "undefined" : "may cause secondary effects"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#administeredIn",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "administeredIn",
+      "undefined" : "administered in"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#hasDiagnosisMethods",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "hasDiagnosisMethods",
+      "undefined" : "has diagnosis methods"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#hasResponsibleImmuneCell",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "hasResponsibleImmuneCell",
+      "undefined" : "has responsible immune cell"
+    },
+    "domain" : "8",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#affectsExocrineSystem",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "affectsExocrineSystem",
+      "undefined" : "affects exocrine system"
+    },
+    "domain" : "67",
+    "attributes" : [ "object" ],
+    "id" : "66"
+  }, {
+    "range" : "58",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#affectsCardiovascularSystem",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "affectsCardiovascularSystem",
+      "undefined" : "affects cardiovascular system"
+    },
+    "domain" : "71",
+    "attributes" : [ "object" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#hasAsociation",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "74",
+    "label" : {
+      "IRI-based" : "hasAsociation",
+      "undefined" : "has asociation"
+    },
+    "domain" : "8",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "73"
+  }, {
+    "range" : "12",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#involvedInPathway",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "involvedInPathway",
+      "undefined" : "involved in pathway"
+    },
+    "domain" : "60",
+    "attributes" : [ "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#hasAutoimmuneDiseaseType",
+    "inverse" : "79",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasAutoimmuneDiseaseType",
+      "undefined" : "has autoimmune disease type"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "78"
+  }, {
+    "range" : "12",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
+  }, {
+    "range" : "12",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#presentInOrgan",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "presentInOrgan",
+      "undefined" : "present in organ"
+    },
+    "domain" : "23",
+    "attributes" : [ "object" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#hasResponsibleImmuneCell",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "hasResponsibleImmuneCell",
+      "undefined" : "has responsible immune cell"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#producesSignalMolecule",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "producesSignalMolecule",
+      "undefined" : "produces signal molecule"
+    },
+    "domain" : "26",
+    "attributes" : [ "object" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#involvedInBiologicalProcess",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "involvedInBiologicalProcess",
+      "undefined" : "involved in biological process"
+    },
+    "domain" : "60",
+    "attributes" : [ "object" ],
+    "id" : "85"
+  }, {
+    "range" : "12",
+    "domain" : "88",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "87"
+  }, {
+    "range" : "12",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
+  }, {
+    "range" : "12",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "91"
+  }, {
+    "range" : "12",
+    "domain" : "93",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#interactsWithTarget",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "interactsWithTarget",
+      "undefined" : "interacts with target"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "94"
+  }, {
+    "range" : "3",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "95"
+  }, {
+    "range" : "3",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "97"
+  }, {
+    "range" : "3",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#expressedBy",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "101",
+    "label" : {
+      "IRI-based" : "expressedBy",
+      "undefined" : "expressed by"
+    },
+    "domain" : "60",
+    "attributes" : [ "object" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#manufacturedBy",
+    "inverse" : "51",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "manufacturedBy",
+      "undefined" : "manufactured by"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#MESHTermOf",
+    "inverse" : "108",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "MESHTermOf",
+      "undefined" : "MESH term of"
+    },
+    "domain" : "107",
+    "attributes" : [ "object" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#Dosage",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "110",
+    "label" : {
+      "IRI-based" : "Dosage",
+      "undefined" : "dosage"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#affectsBloodSystem",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "102",
+    "label" : {
+      "IRI-based" : "affectsBloodSystem",
+      "undefined" : "affects blood system"
+    },
+    "domain" : "89",
+    "attributes" : [ "object" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#treatsDisease",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "treatsDisease",
+      "undefined" : "treats disease"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#hasSymptoms",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "117",
+    "label" : {
+      "IRI-based" : "hasSymptoms",
+      "undefined" : "has symptoms"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#presentInCellType",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "presentInCellType",
+      "undefined" : "present in cell type"
+    },
+    "domain" : "21",
+    "attributes" : [ "object" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#hasCountryOfOrigin",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "hasCountryOfOrigin",
+      "undefined" : "has country of origin"
+    },
+    "domain" : "34",
+    "attributes" : [ "object" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#includeAutoimmuneDisease",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "includeAutoimmuneDisease",
+      "undefined" : "include autoimmune disease"
+    },
+    "domain" : "12",
+    "attributes" : [ "object" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#administeredIn",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "administeredIn",
+      "undefined" : "administered in"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#hasAsociation",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "74",
+    "label" : {
+      "IRI-based" : "hasAsociation",
+      "undefined" : "has asociation"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "122"
+  }, {
+    "range" : "60",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
+  }, {
+    "range" : "34",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124"
+  }, {
+    "range" : "12",
+    "domain" : "89",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125"
+  }, {
+    "range" : "12",
+    "domain" : "105",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "126"
+  }, {
+    "range" : "12",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "127"
+  }, {
+    "range" : "12",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#interactsWithReceptor",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "interactsWithReceptor",
+      "undefined" : "interacts with receptor"
+    },
+    "domain" : "20",
+    "attributes" : [ "object" ],
+    "id" : "129"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#manufactures",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "manufactures",
+      "undefined" : "manufactures"
+    },
+    "domain" : "50",
+    "attributes" : [ "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#involvedInBiologicalProcess",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "involvedInBiologicalProcess",
+      "undefined" : "involved in biological process"
+    },
+    "domain" : "60",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "130"
+  }, {
+    "range" : "59",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "131"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#hasMolecularFunction",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "hasMolecularFunction",
+      "undefined" : "has molecular function"
+    },
+    "domain" : "60",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "132"
+  }, {
+    "range" : "58",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#isTreatedBy",
+    "inverse" : "10",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "isTreatedBy",
+      "undefined" : "is treated by"
+    },
+    "domain" : "8",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#hasAutoimmuneDiseaseType",
+    "inverse" : "79",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasAutoimmuneDiseaseType",
+      "undefined" : "has autoimmune disease type"
+    },
+    "domain" : "8",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "135"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#hasSymptoms",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "117",
+    "label" : {
+      "IRI-based" : "hasSymptoms",
+      "undefined" : "has symptoms"
+    },
+    "domain" : "8",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "137"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#hasDiagnosisMethods",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "hasDiagnosisMethods",
+      "undefined" : "has diagnosis methods"
+    },
+    "domain" : "8",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#presentInTissue",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "presentInTissue",
+      "undefined" : "present in tissue"
+    },
+    "domain" : "29",
+    "attributes" : [ "object" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#hasMolecularFunction",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "hasMolecularFunction",
+      "undefined" : "has molecular function"
+    },
+    "domain" : "60",
+    "attributes" : [ "object" ],
+    "id" : "140"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#hasName",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "hasName",
+      "undefined" : "has name"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#affectsEndocrineSystem",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "113",
+    "label" : {
+      "IRI-based" : "affectsEndocrineSystem",
+      "undefined" : "affects endocrine system"
+    },
+    "domain" : "57",
+    "attributes" : [ "object" ],
+    "id" : "142"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#expressedBy",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "101",
+    "label" : {
+      "IRI-based" : "expressedBy",
+      "undefined" : "expressed by"
+    },
+    "domain" : "60",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "143"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#involvedInPathway",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "involvedInPathway",
+      "undefined" : "involved in pathway"
+    },
+    "domain" : "60",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "144"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#Definition",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "Definition",
+      "undefined" : "definition"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "145"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#hasMESHTerm",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "107",
+    "label" : {
+      "IRI-based" : "hasMESHTerm",
+      "undefined" : "has MESH term"
+    },
+    "domain" : "8",
+    "attributes" : [ "object", "functional" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#composedByActiveIngredient",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "composedByActiveIngredient",
+      "undefined" : "composed by active ingredient"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "146"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#affectsGastrointestinalSystem",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "114",
+    "label" : {
+      "IRI-based" : "affectsGastrointestinalSystem",
+      "undefined" : "affects gastrointestinal system"
+    },
+    "domain" : "105",
+    "attributes" : [ "object" ],
+    "id" : "147"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#affectsSkinConnectiveTissueSystem",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "affectsSkinConnectiveTissueSystem",
+      "undefined" : "affects skin connective tissue system"
+    },
+    "domain" : "93",
+    "attributes" : [ "object" ],
+    "id" : "148"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#affectsPeripheralNervousSystem",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "affectsPeripheralNervousSystem",
+      "undefined" : "affects peripheral nervous system"
+    },
+    "domain" : "88",
+    "attributes" : [ "object" ],
+    "id" : "149"
+  }, {
+    "iri" : "http://w3id.org/def/autoimmunedisease#hasChebiID",
+    "baseIri" : "http://w3id.org/def/autoimmunedisease",
+    "range" : "136",
+    "label" : {
+      "IRI-based" : "hasChebiID",
+      "undefined" : "has chEBI ID"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "functional" ],
+    "id" : "150"
+  } ]
+}
