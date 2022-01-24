@@ -6,5 +6,6 @@ This repository contains an ontology representing different autoimmune diseases 
 It is the final assignment of Semantic Technologies, from the Master in Computational Biology of the Universidad Politécnica de Madrid
 
 ## Diagram of the ontology
+To more information, please see also the [xml](AutoimmuneDiseases_Diagram.xml) observable in [diagrams.net](https://www.diagrams.net/).
 
 ![Diagram](./AutoimmuneDiseases_Diagram.png)
