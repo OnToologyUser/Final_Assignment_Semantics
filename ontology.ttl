@@ -1,0 +1,2130 @@
+@prefix : <http://w3id.org/def/autoimmunedisease#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://w3id.org/def/autoimmunedisease#> .
+
+<http://w3id.org/def/autoimmunedisease#> rdf:type owl:Ontology ;
+                                          <http://purl.org/dc/elements/1.1/creator> "Guillermo Chumaceiro López" ,
+                                                                                    "Juan Carlos Carrasco Sánchez" ;
+                                          <http://purl.org/dc/elements/1.1/description> "Ontology representing Immune Diseases and the drugs used to treat them" ;
+                                          <http://purl.org/dc/elements/1.1/rights> "https://creativecommons.org/licenses/by/4.0/" ;
+                                          <http://purl.org/dc/elements/1.1/title> "Autoimmune Disease Onthology" ;
+                                          owl:versionInfo "0.0.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#gYear
+xsd:gYear rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://w3id.org/def/autoimmunedisease#MESHTermOf
+:MESHTermOf rdf:type owl:ObjectProperty ;
+            owl:inverseOf :hasMESHTerm ;
+            rdfs:domain :MESHTerm ;
+            rdfs:range <http://purl.obolibrary.org/obo/DOID_4> ,
+                       :Disease ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasAsociation ;
+                         owl:someValuesFrom :Asociaciones
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasDiagnosisMethods ;
+                         owl:someValuesFrom :DiagnosisMethods
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasSymptoms ;
+                         owl:someValuesFrom :Symptoms
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :isTreatedBy ;
+                         owl:someValuesFrom :Drug
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasResponsibleImmuneCell ;
+                         owl:allValuesFrom :ImmuneCell
+                       ] ;
+            rdfs:label "MESH term of" .
+
+
+###  http://w3id.org/def/autoimmunedisease#administeredIn
+:administeredIn rdf:type owl:ObjectProperty ;
+                rdfs:domain :Drug ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :mayCauseSecondaryEffects ;
+                              owl:someValuesFrom :SecondaryEffect
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :administeredIn ;
+                              owl:allValuesFrom :AdministrationRoute
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :composedByActiveIngredient ;
+                              owl:allValuesFrom :ActivePharmaceuticalIngredient
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :interactsWithTarget ;
+                              owl:allValuesFrom :TherapeuticTarget
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :manufacturedBy ;
+                              owl:allValuesFrom :PharmaceuticCompany
+                            ] ;
+                rdfs:range :AdministrationRoute ;
+                rdfs:label "administered in" .
+
+
+###  http://w3id.org/def/autoimmunedisease#affectsBloodSystem
+:affectsBloodSystem rdf:type owl:ObjectProperty ;
+                    rdfs:domain <http://purl.obolibrary.org/obo/DOID_4> ,
+                                :AutoimmuneDisease ,
+                                :BloodAutoimmuneDisease ,
+                                :Disease ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasAsociation ;
+                                  owl:someValuesFrom :Asociaciones
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasDiagnosisMethods ;
+                                  owl:someValuesFrom :DiagnosisMethods
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasSymptoms ;
+                                  owl:someValuesFrom :Symptoms
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :isTreatedBy ;
+                                  owl:someValuesFrom :Drug
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasResponsibleImmuneCell ;
+                                  owl:allValuesFrom :ImmuneCell
+                                ] ;
+                    rdfs:label "affects blood system" .
+
+
+###  http://w3id.org/def/autoimmunedisease#affectsCardiovascularSystem
+:affectsCardiovascularSystem rdf:type owl:ObjectProperty ;
+                             rdfs:domain <http://purl.obolibrary.org/obo/DOID_4> ,
+                                         :AutoimmuneDisease ,
+                                         :CardiovascularAutoimmuneDisease ,
+                                         :Disease ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasAsociation ;
+                                           owl:someValuesFrom :Asociaciones
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasDiagnosisMethods ;
+                                           owl:someValuesFrom :DiagnosisMethods
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasSymptoms ;
+                                           owl:someValuesFrom :Symptoms
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :isTreatedBy ;
+                                           owl:someValuesFrom :Drug
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasResponsibleImmuneCell ;
+                                           owl:allValuesFrom :ImmuneCell
+                                         ] ;
+                             rdfs:label "affects cardiovascular system" .
+
+
+###  http://w3id.org/def/autoimmunedisease#affectsCentralNervousSystem
+:affectsCentralNervousSystem rdf:type owl:ObjectProperty ;
+                             rdfs:domain <http://purl.obolibrary.org/obo/DOID_4> ,
+                                         :AutoimmuneDisease ,
+                                         :CentralNervousAutoimmuneDisease ,
+                                         :Disease ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasAsociation ;
+                                           owl:someValuesFrom :Asociaciones
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasDiagnosisMethods ;
+                                           owl:someValuesFrom :DiagnosisMethods
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasSymptoms ;
+                                           owl:someValuesFrom :Symptoms
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :isTreatedBy ;
+                                           owl:someValuesFrom :Drug
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasResponsibleImmuneCell ;
+                                           owl:allValuesFrom :ImmuneCell
+                                         ] ;
+                             rdfs:label "affects central nervous system" .
+
+
+###  http://w3id.org/def/autoimmunedisease#affectsEndocrineSystem
+:affectsEndocrineSystem rdf:type owl:ObjectProperty ;
+                        rdfs:domain <http://purl.obolibrary.org/obo/DOID_4> ,
+                                    :AutoimmuneDisease ,
+                                    :Disease ,
+                                    :EndocrineAutoimmuneDisease ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasAsociation ;
+                                      owl:someValuesFrom :Asociaciones
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasDiagnosisMethods ;
+                                      owl:someValuesFrom :DiagnosisMethods
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasSymptoms ;
+                                      owl:someValuesFrom :Symptoms
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :isTreatedBy ;
+                                      owl:someValuesFrom :Drug
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasResponsibleImmuneCell ;
+                                      owl:allValuesFrom :ImmuneCell
+                                    ] ;
+                        rdfs:label "affects endocrine system" .
+
+
+###  http://w3id.org/def/autoimmunedisease#affectsExocrineSystem
+:affectsExocrineSystem rdf:type owl:ObjectProperty ;
+                       rdfs:domain <http://purl.obolibrary.org/obo/DOID_4> ,
+                                   :AutoimmuneDisease ,
+                                   :Disease ,
+                                   :ExocrineAutoimmuneDisease ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasAsociation ;
+                                     owl:someValuesFrom :Asociaciones
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasDiagnosisMethods ;
+                                     owl:someValuesFrom :DiagnosisMethods
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasSymptoms ;
+                                     owl:someValuesFrom :Symptoms
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :isTreatedBy ;
+                                     owl:someValuesFrom :Drug
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasResponsibleImmuneCell ;
+                                     owl:allValuesFrom :ImmuneCell
+                                   ] ;
+                       rdfs:label "affects exocrine system" .
+
+
+###  http://w3id.org/def/autoimmunedisease#affectsEyesEarNoseThroatSystem
+:affectsEyesEarNoseThroatSystem rdf:type owl:ObjectProperty ;
+                                rdfs:domain <http://purl.obolibrary.org/obo/DOID_4> ,
+                                            :AutoimmuneDisease ,
+                                            :Disease ,
+                                            :EyesEarNoseThroatAutoimmuneDisease ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :hasAsociation ;
+                                              owl:someValuesFrom :Asociaciones
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :hasDiagnosisMethods ;
+                                              owl:someValuesFrom :DiagnosisMethods
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :hasSymptoms ;
+                                              owl:someValuesFrom :Symptoms
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :isTreatedBy ;
+                                              owl:someValuesFrom :Drug
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :hasResponsibleImmuneCell ;
+                                              owl:allValuesFrom :ImmuneCell
+                                            ] ;
+                                rdfs:label "affects eyes ear nose throat system" .
+
+
+###  http://w3id.org/def/autoimmunedisease#affectsGastrointestinalSystem
+:affectsGastrointestinalSystem rdf:type owl:ObjectProperty ;
+                               rdfs:domain <http://purl.obolibrary.org/obo/DOID_4> ,
+                                           :AutoimmuneDisease ,
+                                           :Disease ,
+                                           :GastrointestinalAutoimmuneDisease ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :hasAsociation ;
+                                             owl:someValuesFrom :Asociaciones
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :hasDiagnosisMethods ;
+                                             owl:someValuesFrom :DiagnosisMethods
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :hasSymptoms ;
+                                             owl:someValuesFrom :Symptoms
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :isTreatedBy ;
+                                             owl:someValuesFrom :Drug
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :hasResponsibleImmuneCell ;
+                                             owl:allValuesFrom :ImmuneCell
+                                           ] ;
+                               rdfs:label "affects gastrointestinal system" .
+
+
+###  http://w3id.org/def/autoimmunedisease#affectsMuscoloskeletalSystem
+:affectsMuscoloskeletalSystem rdf:type owl:ObjectProperty ;
+                              rdfs:domain <http://purl.obolibrary.org/obo/DOID_4> ,
+                                          :AutoimmuneDisease ,
+                                          :Disease ,
+                                          :MusculoskeletalAutoimmuneDisease ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :hasAsociation ;
+                                            owl:someValuesFrom :Asociaciones
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :hasDiagnosisMethods ;
+                                            owl:someValuesFrom :DiagnosisMethods
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :hasSymptoms ;
+                                            owl:someValuesFrom :Symptoms
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :isTreatedBy ;
+                                            owl:someValuesFrom :Drug
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :hasResponsibleImmuneCell ;
+                                            owl:allValuesFrom :ImmuneCell
+                                          ] ;
+                              rdfs:label "affects muscoloskeletal system" .
+
+
+###  http://w3id.org/def/autoimmunedisease#affectsPeripheralNervousSystem
+:affectsPeripheralNervousSystem rdf:type owl:ObjectProperty ;
+                                rdfs:domain <http://purl.obolibrary.org/obo/DOID_4> ,
+                                            :AutoimmuneDisease ,
+                                            :Disease ,
+                                            :PeripheralNervousAutoimmuneDisease ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :hasAsociation ;
+                                              owl:someValuesFrom :Asociaciones
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :hasDiagnosisMethods ;
+                                              owl:someValuesFrom :DiagnosisMethods
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :hasSymptoms ;
+                                              owl:someValuesFrom :Symptoms
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :isTreatedBy ;
+                                              owl:someValuesFrom :Drug
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :hasResponsibleImmuneCell ;
+                                              owl:allValuesFrom :ImmuneCell
+                                            ] ;
+                                rdfs:label "affects peripheral nervous system" .
+
+
+###  http://w3id.org/def/autoimmunedisease#affectsSkinConnectiveTissueSystem
+:affectsSkinConnectiveTissueSystem rdf:type owl:ObjectProperty ;
+                                   rdfs:domain <http://purl.obolibrary.org/obo/DOID_4> ,
+                                               :AutoimmuneDisease ,
+                                               :Disease ,
+                                               :SkinConnectiveTissueAutoimmuneDisease ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasAsociation ;
+                                                 owl:someValuesFrom :Asociaciones
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasDiagnosisMethods ;
+                                                 owl:someValuesFrom :DiagnosisMethods
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasSymptoms ;
+                                                 owl:someValuesFrom :Symptoms
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :isTreatedBy ;
+                                                 owl:someValuesFrom :Drug
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasResponsibleImmuneCell ;
+                                                 owl:allValuesFrom :ImmuneCell
+                                               ] ;
+                                   rdfs:label "affects skin connective tissue system" .
+
+
+###  http://w3id.org/def/autoimmunedisease#affectsUrogenitalSystem
+:affectsUrogenitalSystem rdf:type owl:ObjectProperty ;
+                         rdfs:domain <http://purl.obolibrary.org/obo/DOID_4> ,
+                                     :AutoimmuneDisease ,
+                                     :Disease ,
+                                     :UrogenitalAutoimmuneDisease ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasAsociation ;
+                                       owl:someValuesFrom :Asociaciones
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasDiagnosisMethods ;
+                                       owl:someValuesFrom :DiagnosisMethods
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasSymptoms ;
+                                       owl:someValuesFrom :Symptoms
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :isTreatedBy ;
+                                       owl:someValuesFrom :Drug
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasResponsibleImmuneCell ;
+                                       owl:allValuesFrom :ImmuneCell
+                                     ] ;
+                         rdfs:label "affects urogenital system" .
+
+
+###  http://w3id.org/def/autoimmunedisease#belongsToATCGroup
+:belongsToATCGroup rdf:type owl:ObjectProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain :Drug ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :mayCauseSecondaryEffects ;
+                                 owl:someValuesFrom :SecondaryEffect
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :administeredIn ;
+                                 owl:allValuesFrom :AdministrationRoute
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :composedByActiveIngredient ;
+                                 owl:allValuesFrom :ActivePharmaceuticalIngredient
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :interactsWithTarget ;
+                                 owl:allValuesFrom :TherapeuticTarget
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :manufacturedBy ;
+                                 owl:allValuesFrom :PharmaceuticCompany
+                               ] ;
+                   rdfs:range :ATCGroup ;
+                   rdfs:label "belongs to ATC group" .
+
+
+###  http://w3id.org/def/autoimmunedisease#belongsToMoleculeType
+:belongsToMoleculeType rdf:type owl:ObjectProperty ;
+                       rdfs:domain :TherapeuticTarget ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :belongsToMoleculeType ;
+                                     owl:allValuesFrom :MoleculeType
+                                   ] ;
+                       rdfs:range :MoleculeType ;
+                       rdfs:label "belongs to molecule type" .
+
+
+###  http://w3id.org/def/autoimmunedisease#composedByActiveIngredient
+:composedByActiveIngredient rdf:type owl:ObjectProperty ;
+                            rdfs:domain :Drug ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :mayCauseSecondaryEffects ;
+                                          owl:someValuesFrom :SecondaryEffect
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :administeredIn ;
+                                          owl:allValuesFrom :AdministrationRoute
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :composedByActiveIngredient ;
+                                          owl:allValuesFrom :ActivePharmaceuticalIngredient
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :interactsWithTarget ;
+                                          owl:allValuesFrom :TherapeuticTarget
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :manufacturedBy ;
+                                          owl:allValuesFrom :PharmaceuticCompany
+                                        ] ;
+                            rdfs:range :ActivePharmaceuticalIngredient ;
+                            rdfs:label "composed by active ingredient" .
+
+
+###  http://w3id.org/def/autoimmunedisease#expressedBy
+:expressedBy rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://purl.uniprot.org/core/Protein> ,
+                         :MoleculeType ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasMolecularFunction ;
+                           owl:someValuesFrom :MolecularFunction
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :involvedInBiologicalProcess ;
+                           owl:someValuesFrom :BiologicalProcess
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :involvedInPathway ;
+                           owl:someValuesFrom <http://purl.uniprot.org/core/Pathway>
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :expressedBy ;
+                           owl:allValuesFrom <http://purl.uniprot.org/core/Gene>
+                         ] ;
+             rdfs:range <http://purl.uniprot.org/core/Gene> ;
+             rdfs:label "expressed by" .
+
+
+###  http://w3id.org/def/autoimmunedisease#hasAsociation
+:hasAsociation rdf:type owl:ObjectProperty ;
+               rdfs:domain <http://purl.obolibrary.org/obo/DOID_4> ,
+                           :Disease ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasAsociation ;
+                             owl:someValuesFrom :Asociaciones
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasDiagnosisMethods ;
+                             owl:someValuesFrom :DiagnosisMethods
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasSymptoms ;
+                             owl:someValuesFrom :Symptoms
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :isTreatedBy ;
+                             owl:someValuesFrom :Drug
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasResponsibleImmuneCell ;
+                             owl:allValuesFrom :ImmuneCell
+                           ] ;
+               rdfs:range :Asociaciones ;
+               rdfs:label "has asociation" .
+
+
+###  http://w3id.org/def/autoimmunedisease#hasChebiID
+:hasChebiID rdf:type owl:ObjectProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :Drug ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :mayCauseSecondaryEffects ;
+                          owl:someValuesFrom :SecondaryEffect
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :administeredIn ;
+                          owl:allValuesFrom :AdministrationRoute
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :composedByActiveIngredient ;
+                          owl:allValuesFrom :ActivePharmaceuticalIngredient
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :interactsWithTarget ;
+                          owl:allValuesFrom :TherapeuticTarget
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :manufacturedBy ;
+                          owl:allValuesFrom :PharmaceuticCompany
+                        ] ;
+            rdfs:range :ChebiID ;
+            rdfs:label "has chEBI ID" .
+
+
+###  http://w3id.org/def/autoimmunedisease#hasCountryOfOrigin
+:hasCountryOfOrigin rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Company ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasCountryOfOrigin ;
+                                  owl:allValuesFrom :Country
+                                ] ;
+                    rdfs:range :Country ;
+                    rdfs:label "has country of origin" .
+
+
+###  http://w3id.org/def/autoimmunedisease#hasDiagnosisMethods
+:hasDiagnosisMethods rdf:type owl:ObjectProperty ;
+                     rdfs:domain <http://purl.obolibrary.org/obo/DOID_4> ,
+                                 :Disease ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasAsociation ;
+                                   owl:someValuesFrom :Asociaciones
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasDiagnosisMethods ;
+                                   owl:someValuesFrom :DiagnosisMethods
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasSymptoms ;
+                                   owl:someValuesFrom :Symptoms
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :isTreatedBy ;
+                                   owl:someValuesFrom :Drug
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasResponsibleImmuneCell ;
+                                   owl:allValuesFrom :ImmuneCell
+                                 ] ;
+                     rdfs:range :DiagnosisMethods ;
+                     rdfs:label "has diagnosis methods" .
+
+
+###  http://w3id.org/def/autoimmunedisease#hasFoundationYear
+:hasFoundationYear rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Company ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasCountryOfOrigin ;
+                                 owl:allValuesFrom :Country
+                               ] ;
+                   rdfs:range xsd:xsd .
+
+
+###  http://w3id.org/def/autoimmunedisease#hasMESHTerm
+:hasMESHTerm rdf:type owl:ObjectProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain <http://purl.obolibrary.org/obo/DOID_4> ,
+                         :Disease ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasAsociation ;
+                           owl:someValuesFrom :Asociaciones
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasDiagnosisMethods ;
+                           owl:someValuesFrom :DiagnosisMethods
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasSymptoms ;
+                           owl:someValuesFrom :Symptoms
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :isTreatedBy ;
+                           owl:someValuesFrom :Drug
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasResponsibleImmuneCell ;
+                           owl:allValuesFrom :ImmuneCell
+                         ] ;
+             rdfs:range :MESHTerm ;
+             rdfs:label "has MESH term" .
+
+
+###  http://w3id.org/def/autoimmunedisease#hasMolecularFunction
+:hasMolecularFunction rdf:type owl:ObjectProperty ;
+                      rdfs:domain <http://purl.uniprot.org/core/Protein> ,
+                                  :MoleculeType ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasMolecularFunction ;
+                                    owl:someValuesFrom :MolecularFunction
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :involvedInBiologicalProcess ;
+                                    owl:someValuesFrom :BiologicalProcess
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :involvedInPathway ;
+                                    owl:someValuesFrom <http://purl.uniprot.org/core/Pathway>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :expressedBy ;
+                                    owl:allValuesFrom <http://purl.uniprot.org/core/Gene>
+                                  ] ;
+                      rdfs:range <http://purl.obolibrary.org/obo/GO_0003674> ,
+                                 :MolecularFunction ;
+                      rdfs:label "has molecular function" .
+
+
+###  http://w3id.org/def/autoimmunedisease#hasName
+:hasName rdf:type owl:ObjectProperty ;
+         rdfs:domain :Drug ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :mayCauseSecondaryEffects ;
+                       owl:someValuesFrom :SecondaryEffect
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :administeredIn ;
+                       owl:allValuesFrom :AdministrationRoute
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :composedByActiveIngredient ;
+                       owl:allValuesFrom :ActivePharmaceuticalIngredient
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :interactsWithTarget ;
+                       owl:allValuesFrom :TherapeuticTarget
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :manufacturedBy ;
+                       owl:allValuesFrom :PharmaceuticCompany
+                     ] ;
+         rdfs:label "has name" .
+
+
+###  http://w3id.org/def/autoimmunedisease#hasResponsibleImmuneCell
+:hasResponsibleImmuneCell rdf:type owl:ObjectProperty ;
+                          rdfs:domain <http://purl.obolibrary.org/obo/DOID_4> ,
+                                      :Disease ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasAsociation ;
+                                        owl:someValuesFrom :Asociaciones
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasDiagnosisMethods ;
+                                        owl:someValuesFrom :DiagnosisMethods
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasSymptoms ;
+                                        owl:someValuesFrom :Symptoms
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :isTreatedBy ;
+                                        owl:someValuesFrom :Drug
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasResponsibleImmuneCell ;
+                                        owl:allValuesFrom :ImmuneCell
+                                      ] ;
+                          rdfs:range :ImmuneCell ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :producesSignalMolecule ;
+                                       owl:allValuesFrom :SignalMolecule
+                                     ] ;
+                          rdfs:label "has responsible immune cell" .
+
+
+###  http://w3id.org/def/autoimmunedisease#hasSymptoms
+:hasSymptoms rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://purl.obolibrary.org/obo/DOID_4> ,
+                         :Disease ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasAsociation ;
+                           owl:someValuesFrom :Asociaciones
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasDiagnosisMethods ;
+                           owl:someValuesFrom :DiagnosisMethods
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasSymptoms ;
+                           owl:someValuesFrom :Symptoms
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :isTreatedBy ;
+                           owl:someValuesFrom :Drug
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasResponsibleImmuneCell ;
+                           owl:allValuesFrom :ImmuneCell
+                         ] ;
+             rdfs:range :Symptoms ;
+             rdfs:label "has symptoms" .
+
+
+###  http://w3id.org/def/autoimmunedisease#interactsWithReceptor
+:interactsWithReceptor rdf:type owl:ObjectProperty ;
+                       rdfs:domain :SignalMolecule ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :interactsWithReceptor ;
+                                     owl:allValuesFrom :Receptor
+                                   ] ;
+                       rdfs:range <http://purl.uniprot.org/core/Protein> ,
+                                  :MoleculeType ,
+                                  :Receptor ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasMolecularFunction ;
+                                    owl:someValuesFrom :MolecularFunction
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :involvedInBiologicalProcess ;
+                                    owl:someValuesFrom :BiologicalProcess
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :involvedInPathway ;
+                                    owl:someValuesFrom <http://purl.uniprot.org/core/Pathway>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :expressedBy ;
+                                    owl:allValuesFrom <http://purl.uniprot.org/core/Gene>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :presentInCellType ;
+                                    owl:allValuesFrom :CellType
+                                  ] ;
+                       rdfs:label "interacts with receptor" .
+
+
+###  http://w3id.org/def/autoimmunedisease#interactsWithTarget
+:interactsWithTarget rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Drug ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :mayCauseSecondaryEffects ;
+                                   owl:someValuesFrom :SecondaryEffect
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :administeredIn ;
+                                   owl:allValuesFrom :AdministrationRoute
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :composedByActiveIngredient ;
+                                   owl:allValuesFrom :ActivePharmaceuticalIngredient
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :interactsWithTarget ;
+                                   owl:allValuesFrom :TherapeuticTarget
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :manufacturedBy ;
+                                   owl:allValuesFrom :PharmaceuticCompany
+                                 ] ;
+                     rdfs:range :TherapeuticTarget ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :belongsToMoleculeType ;
+                                  owl:allValuesFrom :MoleculeType
+                                ] ;
+                     rdfs:label "interacts with target" .
+
+
+###  http://w3id.org/def/autoimmunedisease#involvedInBiologicalProcess
+:involvedInBiologicalProcess rdf:type owl:ObjectProperty ;
+                             rdfs:domain <http://purl.uniprot.org/core/Protein> ,
+                                         :MoleculeType ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasMolecularFunction ;
+                                           owl:someValuesFrom :MolecularFunction
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :involvedInBiologicalProcess ;
+                                           owl:someValuesFrom :BiologicalProcess
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :involvedInPathway ;
+                                           owl:someValuesFrom <http://purl.uniprot.org/core/Pathway>
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :expressedBy ;
+                                           owl:allValuesFrom <http://purl.uniprot.org/core/Gene>
+                                         ] ;
+                             rdfs:range <http://purl.obolibrary.org/obo/GO_0008150> ,
+                                        :BiologicalProcess ;
+                             rdfs:label "involved in biological process" .
+
+
+###  http://w3id.org/def/autoimmunedisease#involvedInPathway
+:involvedInPathway rdf:type owl:ObjectProperty ;
+                   rdfs:domain <http://purl.uniprot.org/core/Protein> ,
+                               :MoleculeType ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasMolecularFunction ;
+                                 owl:someValuesFrom :MolecularFunction
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :involvedInBiologicalProcess ;
+                                 owl:someValuesFrom :BiologicalProcess
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :involvedInPathway ;
+                                 owl:someValuesFrom <http://purl.uniprot.org/core/Pathway>
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :expressedBy ;
+                                 owl:allValuesFrom <http://purl.uniprot.org/core/Gene>
+                               ] ;
+                   rdfs:range <http://purl.uniprot.org/core/Pathway> ;
+                   rdfs:label "involved in pathway" .
+
+
+###  http://w3id.org/def/autoimmunedisease#isTreatedBy
+:isTreatedBy rdf:type owl:ObjectProperty ;
+             owl:inverseOf :treatsDisease ;
+             rdfs:domain <http://purl.obolibrary.org/obo/DOID_4> ,
+                         :Disease ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasAsociation ;
+                           owl:someValuesFrom :Asociaciones
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasDiagnosisMethods ;
+                           owl:someValuesFrom :DiagnosisMethods
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasSymptoms ;
+                           owl:someValuesFrom :Symptoms
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :isTreatedBy ;
+                           owl:someValuesFrom :Drug
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasResponsibleImmuneCell ;
+                           owl:allValuesFrom :ImmuneCell
+                         ] ;
+             rdfs:range :Drug ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :mayCauseSecondaryEffects ;
+                          owl:someValuesFrom :SecondaryEffect
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :administeredIn ;
+                          owl:allValuesFrom :AdministrationRoute
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :composedByActiveIngredient ;
+                          owl:allValuesFrom :ActivePharmaceuticalIngredient
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :interactsWithTarget ;
+                          owl:allValuesFrom :TherapeuticTarget
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :manufacturedBy ;
+                          owl:allValuesFrom :PharmaceuticCompany
+                        ] ;
+             rdfs:label "is treated by" .
+
+
+###  http://w3id.org/def/autoimmunedisease#manufacturedBy
+:manufacturedBy rdf:type owl:ObjectProperty ;
+                owl:inverseOf :manufactures ;
+                rdfs:domain :Drug ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :mayCauseSecondaryEffects ;
+                              owl:someValuesFrom :SecondaryEffect
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :administeredIn ;
+                              owl:allValuesFrom :AdministrationRoute
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :composedByActiveIngredient ;
+                              owl:allValuesFrom :ActivePharmaceuticalIngredient
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :interactsWithTarget ;
+                              owl:allValuesFrom :TherapeuticTarget
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :manufacturedBy ;
+                              owl:allValuesFrom :PharmaceuticCompany
+                            ] ;
+                rdfs:range :Company ,
+                           :PharmaceuticCompany ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasCountryOfOrigin ;
+                             owl:allValuesFrom :Country
+                           ] ;
+                rdfs:label "manufactured by" .
+
+
+###  http://w3id.org/def/autoimmunedisease#manufactures
+:manufactures rdf:type owl:ObjectProperty ;
+              rdfs:domain :Company ,
+                          :PharmaceuticCompany ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasCountryOfOrigin ;
+                            owl:allValuesFrom :Country
+                          ] ;
+              rdfs:range :Drug ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :mayCauseSecondaryEffects ;
+                           owl:someValuesFrom :SecondaryEffect
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :administeredIn ;
+                           owl:allValuesFrom :AdministrationRoute
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :composedByActiveIngredient ;
+                           owl:allValuesFrom :ActivePharmaceuticalIngredient
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :interactsWithTarget ;
+                           owl:allValuesFrom :TherapeuticTarget
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :manufacturedBy ;
+                           owl:allValuesFrom :PharmaceuticCompany
+                         ] ;
+              rdfs:label "manufactures" .
+
+
+###  http://w3id.org/def/autoimmunedisease#mayCauseSecondaryEffects
+:mayCauseSecondaryEffects rdf:type owl:ObjectProperty ;
+                          rdfs:domain :Drug ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :mayCauseSecondaryEffects ;
+                                        owl:someValuesFrom :SecondaryEffect
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :administeredIn ;
+                                        owl:allValuesFrom :AdministrationRoute
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :composedByActiveIngredient ;
+                                        owl:allValuesFrom :ActivePharmaceuticalIngredient
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :interactsWithTarget ;
+                                        owl:allValuesFrom :TherapeuticTarget
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :manufacturedBy ;
+                                        owl:allValuesFrom :PharmaceuticCompany
+                                      ] ;
+                          rdfs:range :SecondaryEffect ;
+                          rdfs:label "may cause secondary effects" .
+
+
+###  http://w3id.org/def/autoimmunedisease#presentInBodySystem
+:presentInBodySystem rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Organ ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :presentInBodySystem ;
+                                   owl:allValuesFrom :BodySystem
+                                 ] ;
+                     rdfs:range :BodySystem ;
+                     rdfs:label "present in body system" .
+
+
+###  http://w3id.org/def/autoimmunedisease#presentInCellType
+:presentInCellType rdf:type owl:ObjectProperty ;
+                   rdfs:domain <http://purl.uniprot.org/core/Protein> ,
+                               :MoleculeType ,
+                               :Receptor ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasMolecularFunction ;
+                                 owl:someValuesFrom :MolecularFunction
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :involvedInBiologicalProcess ;
+                                 owl:someValuesFrom :BiologicalProcess
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :involvedInPathway ;
+                                 owl:someValuesFrom <http://purl.uniprot.org/core/Pathway>
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :expressedBy ;
+                                 owl:allValuesFrom <http://purl.uniprot.org/core/Gene>
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :presentInCellType ;
+                                 owl:allValuesFrom :CellType
+                               ] ;
+                   rdfs:range :CellType ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :presentInTissue ;
+                                owl:allValuesFrom :Tissue
+                              ] ;
+                   rdfs:label "present in cell type" .
+
+
+###  http://w3id.org/def/autoimmunedisease#presentInOrgan
+:presentInOrgan rdf:type owl:ObjectProperty ;
+                rdfs:domain :Tissue ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :presentInOrgan ;
+                              owl:allValuesFrom :Organ
+                            ] ;
+                rdfs:range :Organ ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :presentInBodySystem ;
+                             owl:allValuesFrom :BodySystem
+                           ] ;
+                rdfs:label "present in organ" .
+
+
+###  http://w3id.org/def/autoimmunedisease#presentInTissue
+:presentInTissue rdf:type owl:ObjectProperty ;
+                 rdfs:domain :CellType ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :presentInTissue ;
+                               owl:allValuesFrom :Tissue
+                             ] ;
+                 rdfs:range :Tissue ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :presentInOrgan ;
+                              owl:allValuesFrom :Organ
+                            ] ;
+                 rdfs:label "present in tissue" .
+
+
+###  http://w3id.org/def/autoimmunedisease#producesSignalMolecule
+:producesSignalMolecule rdf:type owl:ObjectProperty ;
+                        rdfs:domain :ImmuneCell ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :producesSignalMolecule ;
+                                      owl:allValuesFrom :SignalMolecule
+                                    ] ;
+                        rdfs:range :SignalMolecule ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :interactsWithReceptor ;
+                                     owl:allValuesFrom :Receptor
+                                   ] ;
+                        rdfs:label "produces signal molecule" .
+
+
+###  http://w3id.org/def/autoimmunedisease#treatsDisease
+:treatsDisease rdf:type owl:ObjectProperty ;
+               rdfs:domain :Drug ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :mayCauseSecondaryEffects ;
+                             owl:someValuesFrom :SecondaryEffect
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :administeredIn ;
+                             owl:allValuesFrom :AdministrationRoute
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :composedByActiveIngredient ;
+                             owl:allValuesFrom :ActivePharmaceuticalIngredient
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :interactsWithTarget ;
+                             owl:allValuesFrom :TherapeuticTarget
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :manufacturedBy ;
+                             owl:allValuesFrom :PharmaceuticCompany
+                           ] ;
+               rdfs:range <http://purl.obolibrary.org/obo/DOID_4> ,
+                          :Disease ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasAsociation ;
+                            owl:someValuesFrom :Asociaciones
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasDiagnosisMethods ;
+                            owl:someValuesFrom :DiagnosisMethods
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasSymptoms ;
+                            owl:someValuesFrom :Symptoms
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :isTreatedBy ;
+                            owl:someValuesFrom :Drug
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasResponsibleImmuneCell ;
+                            owl:allValuesFrom :ImmuneCell
+                          ] ;
+               rdfs:label "treats disease" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://w3id.org/def/autoimmunedisease#hasCommertialName
+:hasCommertialName rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Drug ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :mayCauseSecondaryEffects ;
+                                 owl:someValuesFrom :SecondaryEffect
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :administeredIn ;
+                                 owl:allValuesFrom :AdministrationRoute
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :composedByActiveIngredient ;
+                                 owl:allValuesFrom :ActivePharmaceuticalIngredient
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :interactsWithTarget ;
+                                 owl:allValuesFrom :TherapeuticTarget
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :manufacturedBy ;
+                                 owl:allValuesFrom :PharmaceuticCompany
+                               ] ;
+                   rdfs:range xsd:string .
+
+
+###  http://w3id.org/def/autoimmunedisease#hasDefinition
+:hasDefinition rdf:type owl:DatatypeProperty ;
+               rdfs:domain <http://purl.obolibrary.org/obo/DOID_4> ,
+                           :Disease ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasAsociation ;
+                             owl:someValuesFrom :Asociaciones
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasDiagnosisMethods ;
+                             owl:someValuesFrom :DiagnosisMethods
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasSymptoms ;
+                             owl:someValuesFrom :Symptoms
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :isTreatedBy ;
+                             owl:someValuesFrom :Drug
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasResponsibleImmuneCell ;
+                             owl:allValuesFrom :ImmuneCell
+                           ] ;
+               rdfs:range xsd:string ;
+               rdfs:label "definition" .
+
+
+###  http://w3id.org/def/autoimmunedisease#hasDosage
+:hasDosage rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Drug ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :mayCauseSecondaryEffects ;
+                         owl:someValuesFrom :SecondaryEffect
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :administeredIn ;
+                         owl:allValuesFrom :AdministrationRoute
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :composedByActiveIngredient ;
+                         owl:allValuesFrom :ActivePharmaceuticalIngredient
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :interactsWithTarget ;
+                         owl:allValuesFrom :TherapeuticTarget
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :manufacturedBy ;
+                         owl:allValuesFrom :PharmaceuticCompany
+                       ] ;
+           rdfs:label "dosage" .
+
+
+###  http://w3id.org/def/autoimmunedisease#hasFoundationYear
+:hasFoundationYear rdf:type owl:DatatypeProperty ;
+                   rdfs:range xsd:gYear .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/DOID_4
+<http://purl.obolibrary.org/obo/DOID_4> rdf:type owl:Class ;
+                                        owl:equivalentClass :Disease ;
+                                        rdfs:subClassOf :Disease ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :hasAsociation ;
+                                                          owl:someValuesFrom :Asociaciones
+                                                        ] ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :hasDiagnosisMethods ;
+                                                          owl:someValuesFrom :DiagnosisMethods
+                                                        ] ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :hasSymptoms ;
+                                                          owl:someValuesFrom :Symptoms
+                                                        ] ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :isTreatedBy ;
+                                                          owl:someValuesFrom :Drug
+                                                        ] ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :hasResponsibleImmuneCell ;
+                                                          owl:allValuesFrom :ImmuneCell
+                                                        ] ;
+                                        rdfs:label "AutoimmuneDisease class from Human Disease Ontology" .
+
+
+###  http://purl.obolibrary.org/obo/GO_0003674
+<http://purl.obolibrary.org/obo/GO_0003674> rdf:type owl:Class ;
+                                            owl:equivalentClass :MolecularFunction ;
+                                            rdfs:subClassOf :MolecularFunction ;
+                                            rdfs:label "MolecularFunction class from Gene Ontology" .
+
+
+###  http://purl.obolibrary.org/obo/GO_0008150
+<http://purl.obolibrary.org/obo/GO_0008150> rdf:type owl:Class ;
+                                            owl:equivalentClass :BiologicalProcess ;
+                                            rdfs:subClassOf :BiologicalProcess ;
+                                            rdfs:label "BiologicalProcess class from Gene Ontology" .
+
+
+###  http://purl.uniprot.org/core/Gene
+<http://purl.uniprot.org/core/Gene> rdf:type owl:Class ;
+                                    rdfs:label "Gene" .
+
+
+###  http://purl.uniprot.org/core/Pathway
+<http://purl.uniprot.org/core/Pathway> rdf:type owl:Class ;
+                                       rdfs:label "Pathway" .
+
+
+###  http://purl.uniprot.org/core/Protein
+<http://purl.uniprot.org/core/Protein> rdf:type owl:Class ;
+                                       rdfs:subClassOf :MoleculeType ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :hasMolecularFunction ;
+                                                         owl:someValuesFrom :MolecularFunction
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :involvedInBiologicalProcess ;
+                                                         owl:someValuesFrom :BiologicalProcess
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :involvedInPathway ;
+                                                         owl:someValuesFrom <http://purl.uniprot.org/core/Pathway>
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :expressedBy ;
+                                                         owl:allValuesFrom <http://purl.uniprot.org/core/Gene>
+                                                       ] ;
+                                       owl:disjointWith :Carbohydrate ,
+                                                        :Lipid ;
+                                       rdfs:label "Protein" .
+
+
+###  http://w3id.org/def/autoimmunedisease#ATCGroup
+:ATCGroup rdf:type owl:Class ;
+          rdfs:label "ATC Group" .
+
+
+###  http://w3id.org/def/autoimmunedisease#ActivePharmaceuticalIngredient
+:ActivePharmaceuticalIngredient rdf:type owl:Class ;
+                                rdfs:label "Active Pharmaceutical Ingredient" .
+
+
+###  http://w3id.org/def/autoimmunedisease#AdministrationRoute
+:AdministrationRoute rdf:type owl:Class ;
+                     rdfs:label "Administration Route" .
+
+
+###  http://w3id.org/def/autoimmunedisease#Asociaciones
+:Asociaciones rdf:type owl:Class ;
+              rdfs:label "Asociaciones" .
+
+
+###  http://w3id.org/def/autoimmunedisease#AutoimmuneDisease
+:AutoimmuneDisease rdf:type owl:Class ;
+                   rdfs:subClassOf <http://purl.obolibrary.org/obo/DOID_4> ,
+                                   :Disease ;
+                   rdfs:label "Autoimmune Disease Type" .
+
+
+###  http://w3id.org/def/autoimmunedisease#BiologicalProcess
+:BiologicalProcess rdf:type owl:Class ;
+                   rdfs:subClassOf <http://purl.obolibrary.org/obo/GO_0008150> ;
+                   rdfs:label "Biological Process" .
+
+
+###  http://w3id.org/def/autoimmunedisease#BloodAutoimmuneDisease
+:BloodAutoimmuneDisease rdf:type owl:Class ;
+                        rdfs:subClassOf :AutoimmuneDisease ;
+                        rdfs:label "Blood Autoimmune Disease" .
+
+
+###  http://w3id.org/def/autoimmunedisease#BodySystem
+:BodySystem rdf:type owl:Class ;
+            rdfs:label "Body System" .
+
+
+###  http://w3id.org/def/autoimmunedisease#Carbohydrate
+:Carbohydrate rdf:type owl:Class ;
+              rdfs:subClassOf :MoleculeType ;
+              owl:disjointWith :Lipid ;
+              rdfs:label "Carbohydrate" .
+
+
+###  http://w3id.org/def/autoimmunedisease#CardiovascularAutoimmuneDisease
+:CardiovascularAutoimmuneDisease rdf:type owl:Class ;
+                                 rdfs:subClassOf :AutoimmuneDisease ;
+                                 rdfs:label "Cardiovascular Autoimmune Disease" .
+
+
+###  http://w3id.org/def/autoimmunedisease#CellType
+:CellType rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :presentInTissue ;
+                            owl:allValuesFrom :Tissue
+                          ] ;
+          rdfs:label "Cell Type" .
+
+
+###  http://w3id.org/def/autoimmunedisease#CentralNervousAutoimmuneDisease
+:CentralNervousAutoimmuneDisease rdf:type owl:Class ;
+                                 rdfs:subClassOf :AutoimmuneDisease ;
+                                 rdfs:label "Central Nervous Autoimmune Disease" .
+
+
+###  http://w3id.org/def/autoimmunedisease#ChebiID
+:ChebiID rdf:type owl:Class ;
+         rdfs:label "ChEBI ID" .
+
+
+###  http://w3id.org/def/autoimmunedisease#Company
+:Company rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasCountryOfOrigin ;
+                           owl:allValuesFrom :Country
+                         ] ;
+         rdfs:label "Company" .
+
+
+###  http://w3id.org/def/autoimmunedisease#Country
+:Country rdf:type owl:Class ;
+         rdfs:label "Country" .
+
+
+###  http://w3id.org/def/autoimmunedisease#DiagnosisMethods
+:DiagnosisMethods rdf:type owl:Class ;
+                  rdfs:label "Diagnosis Methods" .
+
+
+###  http://w3id.org/def/autoimmunedisease#Disease
+:Disease rdf:type owl:Class ;
+         rdfs:subClassOf <http://purl.obolibrary.org/obo/DOID_4> ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasAsociation ;
+                           owl:someValuesFrom :Asociaciones
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasDiagnosisMethods ;
+                           owl:someValuesFrom :DiagnosisMethods
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasSymptoms ;
+                           owl:someValuesFrom :Symptoms
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :isTreatedBy ;
+                           owl:someValuesFrom :Drug
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasResponsibleImmuneCell ;
+                           owl:allValuesFrom :ImmuneCell
+                         ] ;
+         rdfs:label "Autoimmune Disease" .
+
+
+###  http://w3id.org/def/autoimmunedisease#Drug
+:Drug rdf:type owl:Class ;
+      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                        owl:onProperty :mayCauseSecondaryEffects ;
+                        owl:someValuesFrom :SecondaryEffect
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :administeredIn ;
+                        owl:allValuesFrom :AdministrationRoute
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :composedByActiveIngredient ;
+                        owl:allValuesFrom :ActivePharmaceuticalIngredient
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :interactsWithTarget ;
+                        owl:allValuesFrom :TherapeuticTarget
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :manufacturedBy ;
+                        owl:allValuesFrom :PharmaceuticCompany
+                      ] ;
+      rdfs:label "Drug" .
+
+
+###  http://w3id.org/def/autoimmunedisease#EndocrineAutoimmuneDisease
+:EndocrineAutoimmuneDisease rdf:type owl:Class ;
+                            rdfs:subClassOf :AutoimmuneDisease ;
+                            rdfs:label "Endocrine Autoimmune Disease" .
+
+
+###  http://w3id.org/def/autoimmunedisease#ExocrineAutoimmuneDisease
+:ExocrineAutoimmuneDisease rdf:type owl:Class ;
+                           rdfs:subClassOf :AutoimmuneDisease ;
+                           rdfs:label "Exocrine Autoimmune Disease" .
+
+
+###  http://w3id.org/def/autoimmunedisease#EyesEarNoseThroatAutoimmuneDisease
+:EyesEarNoseThroatAutoimmuneDisease rdf:type owl:Class ;
+                                    rdfs:subClassOf :AutoimmuneDisease ;
+                                    rdfs:label "Eyes Ear Nose Throat Autoimmune Disease" .
+
+
+###  http://w3id.org/def/autoimmunedisease#GastrointestinalAutoimmuneDisease
+:GastrointestinalAutoimmuneDisease rdf:type owl:Class ;
+                                   rdfs:subClassOf :AutoimmuneDisease ;
+                                   rdfs:label "Gastrointestinal Autoimmune Disease" .
+
+
+###  http://w3id.org/def/autoimmunedisease#ImmuneCell
+:ImmuneCell rdf:type owl:Class ;
+            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                              owl:onProperty :producesSignalMolecule ;
+                              owl:allValuesFrom :SignalMolecule
+                            ] ;
+            rdfs:label "Immune Cell" .
+
+
+###  http://w3id.org/def/autoimmunedisease#Lipid
+:Lipid rdf:type owl:Class ;
+       rdfs:subClassOf :MoleculeType ;
+       rdfs:label "Lipid" .
+
+
+###  http://w3id.org/def/autoimmunedisease#MESHTerm
+:MESHTerm rdf:type owl:Class ;
+          rdfs:label "MESH Term" .
+
+
+###  http://w3id.org/def/autoimmunedisease#MolecularFunction
+:MolecularFunction rdf:type owl:Class ;
+                   rdfs:subClassOf <http://purl.obolibrary.org/obo/GO_0003674> ;
+                   rdfs:label "Molecular Function" .
+
+
+###  http://w3id.org/def/autoimmunedisease#MoleculeType
+:MoleculeType rdf:type owl:Class ;
+              rdfs:label "Molecule Type" .
+
+
+###  http://w3id.org/def/autoimmunedisease#MusculoskeletalAutoimmuneDisease
+:MusculoskeletalAutoimmuneDisease rdf:type owl:Class ;
+                                  rdfs:subClassOf :AutoimmuneDisease ;
+                                  rdfs:label "Musculoskeletal Autoimmune Disease" .
+
+
+###  http://w3id.org/def/autoimmunedisease#Organ
+:Organ rdf:type owl:Class ;
+       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                         owl:onProperty :presentInBodySystem ;
+                         owl:allValuesFrom :BodySystem
+                       ] ;
+       rdfs:label "Organ" .
+
+
+###  http://w3id.org/def/autoimmunedisease#PeripheralNervousAutoimmuneDisease
+:PeripheralNervousAutoimmuneDisease rdf:type owl:Class ;
+                                    rdfs:subClassOf :AutoimmuneDisease ;
+                                    rdfs:label "Peripheral Nervous Autoimmune Disease" .
+
+
+###  http://w3id.org/def/autoimmunedisease#PharmaceuticCompany
+:PharmaceuticCompany rdf:type owl:Class ;
+                     rdfs:subClassOf :Company ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasCountryOfOrigin ;
+                                       owl:allValuesFrom :Country
+                                     ] ;
+                     rdfs:label "Pharmaceutic Company" .
+
+
+###  http://w3id.org/def/autoimmunedisease#Receptor
+:Receptor rdf:type owl:Class ;
+          rdfs:subClassOf <http://purl.uniprot.org/core/Protein> ,
+                          :MoleculeType ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasMolecularFunction ;
+                            owl:someValuesFrom :MolecularFunction
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :involvedInBiologicalProcess ;
+                            owl:someValuesFrom :BiologicalProcess
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :involvedInPathway ;
+                            owl:someValuesFrom <http://purl.uniprot.org/core/Pathway>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :expressedBy ;
+                            owl:allValuesFrom <http://purl.uniprot.org/core/Gene>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :presentInCellType ;
+                            owl:allValuesFrom :CellType
+                          ] ;
+          rdfs:label "Receptor" .
+
+
+###  http://w3id.org/def/autoimmunedisease#SecondaryEffect
+:SecondaryEffect rdf:type owl:Class ;
+                 rdfs:label "Secondary Effect" .
+
+
+###  http://w3id.org/def/autoimmunedisease#SignalMolecule
+:SignalMolecule rdf:type owl:Class ;
+                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                  owl:onProperty :interactsWithReceptor ;
+                                  owl:allValuesFrom :Receptor
+                                ] ;
+                rdfs:label "Signal Molecule" .
+
+
+###  http://w3id.org/def/autoimmunedisease#SkinConnectiveTissueAutoimmuneDisease
+:SkinConnectiveTissueAutoimmuneDisease rdf:type owl:Class ;
+                                       rdfs:subClassOf :AutoimmuneDisease ;
+                                       rdfs:label "Skin Connective Tissue Autoimmune Disease" .
+
+
+###  http://w3id.org/def/autoimmunedisease#Symptoms
+:Symptoms rdf:type owl:Class ;
+          rdfs:label "Symptoms" .
+
+
+###  http://w3id.org/def/autoimmunedisease#TherapeuticTarget
+:TherapeuticTarget rdf:type owl:Class ;
+                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                     owl:onProperty :belongsToMoleculeType ;
+                                     owl:allValuesFrom :MoleculeType
+                                   ] ;
+                   rdfs:label "Therapeutic Target" .
+
+
+###  http://w3id.org/def/autoimmunedisease#Tissue
+:Tissue rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :presentInOrgan ;
+                          owl:allValuesFrom :Organ
+                        ] ;
+        rdfs:label "Tissue" .
+
+
+###  http://w3id.org/def/autoimmunedisease#UrogenitalAutoimmuneDisease
+:UrogenitalAutoimmuneDisease rdf:type owl:Class ;
+                             rdfs:subClassOf :AutoimmuneDisease ;
+                             rdfs:label "Urogenital Autoimmune Disease" .
+
+
+###  http://www.w3.org/2001/XMLSchema#xsd
+xsd:xsd rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://w3id.org/def/autoimmunedisease#Abbott
+:Abbott rdf:type owl:NamedIndividual ,
+                 :Company ,
+                 :PharmaceuticCompany ,
+                 [ rdf:type owl:Restriction ;
+                   owl:onProperty :hasCountryOfOrigin ;
+                   owl:allValuesFrom :Country
+                 ] ;
+        :hasCountryOfOrigin :UnitedStates ;
+        :manufactures :Levothyroxine ;
+        :hasFoundationYear "1888" .
+
+
+###  http://w3id.org/def/autoimmunedisease#Antibody
+:Antibody rdf:type owl:NamedIndividual ,
+                   :SignalMolecule ,
+                   [ rdf:type owl:Restriction ;
+                     owl:onProperty :interactsWithReceptor ;
+                     owl:allValuesFrom :Receptor
+                   ] ;
+          :interactsWithReceptor :CAR-P .
+
+
+###  http://w3id.org/def/autoimmunedisease#AntibodyTest
+:AntibodyTest rdf:type owl:NamedIndividual ,
+                       :DiagnosisMethods .
+
+
+###  http://w3id.org/def/autoimmunedisease#BCell
+:BCell rdf:type owl:NamedIndividual ,
+                :ImmuneCell ,
+                [ rdf:type owl:Restriction ;
+                  owl:onProperty :producesSignalMolecule ;
+                  owl:allValuesFrom :SignalMolecule
+                ] ;
+       :producesSignalMolecule :Antibody .
+
+
+###  http://w3id.org/def/autoimmunedisease#BloodSystem
+:BloodSystem rdf:type owl:NamedIndividual ,
+                      :BodySystem .
+
+
+###  http://w3id.org/def/autoimmunedisease#BloodTest
+:BloodTest rdf:type owl:NamedIndividual ,
+                    :DiagnosisMethods .
+
+
+###  http://w3id.org/def/autoimmunedisease#CAR-P
+:CAR-P rdf:type owl:NamedIndividual ,
+                <http://purl.uniprot.org/core/Protein> ,
+                :MoleculeType ,
+                :Receptor ,
+                [ rdf:type owl:Restriction ;
+                  owl:onProperty :hasMolecularFunction ;
+                  owl:someValuesFrom :MolecularFunction
+                ] ,
+                [ rdf:type owl:Restriction ;
+                  owl:onProperty :involvedInBiologicalProcess ;
+                  owl:someValuesFrom :BiologicalProcess
+                ] ,
+                [ rdf:type owl:Restriction ;
+                  owl:onProperty :involvedInPathway ;
+                  owl:someValuesFrom <http://purl.uniprot.org/core/Pathway>
+                ] ,
+                [ rdf:type owl:Restriction ;
+                  owl:onProperty :expressedBy ;
+                  owl:allValuesFrom <http://purl.uniprot.org/core/Gene>
+                ] ,
+                [ rdf:type owl:Restriction ;
+                  owl:onProperty :presentInCellType ;
+                  owl:allValuesFrom :CellType
+                ] ;
+       :presentInCellType :JointCells .
+
+
+###  http://w3id.org/def/autoimmunedisease#CardiovascularSystem
+:CardiovascularSystem rdf:type owl:NamedIndividual ,
+                               :BodySystem .
+
+
+###  http://w3id.org/def/autoimmunedisease#CentralNervousSystem
+:CentralNervousSystem rdf:type owl:NamedIndividual ,
+                               :BodySystem .
+
+
+###  http://w3id.org/def/autoimmunedisease#Constipation
+:Constipation rdf:type owl:NamedIndividual ,
+                       :Symptoms .
+
+
+###  http://w3id.org/def/autoimmunedisease#D001172
+:D001172 rdf:type owl:NamedIndividual ,
+                  :MESHTerm ;
+         :MESHTermOf :RheumatoidArthritis .
+
+
+###  http://w3id.org/def/autoimmunedisease#D050031
+:D050031 rdf:type owl:NamedIndividual ,
+                  :MESHTerm ;
+         :MESHTermOf <http://w3id.org/def/autoimmunedisease#Hashimoto's_Disease> .
+
+
+###  http://w3id.org/def/autoimmunedisease#EndocrineSystem
+:EndocrineSystem rdf:type owl:NamedIndividual ,
+                          :BodySystem .
+
+
+###  http://w3id.org/def/autoimmunedisease#ExocrineSystem
+:ExocrineSystem rdf:type owl:NamedIndividual ,
+                         :BodySystem .
+
+
+###  http://w3id.org/def/autoimmunedisease#EyesEarNoseThroatSystem
+:EyesEarNoseThroatSystem rdf:type owl:NamedIndividual ,
+                                  :BodySystem .
+
+
+###  http://w3id.org/def/autoimmunedisease#Fatigue
+:Fatigue rdf:type owl:NamedIndividual ,
+                  :Symptoms .
+
+
+###  http://w3id.org/def/autoimmunedisease#Fever
+:Fever rdf:type owl:NamedIndividual ,
+                :SecondaryEffect .
+
+
+###  http://w3id.org/def/autoimmunedisease#GastrointestinalSystem
+:GastrointestinalSystem rdf:type owl:NamedIndividual ,
+                                 :BodySystem .
+
+
+###  http://w3id.org/def/autoimmunedisease#H03AA01
+:H03AA01 rdf:type owl:NamedIndividual ,
+                  :ATCGroup .
+
+
+###  http://w3id.org/def/autoimmunedisease#IL-2
+:IL-2 rdf:type owl:NamedIndividual ,
+               :SignalMolecule ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :interactsWithReceptor ;
+                 owl:allValuesFrom :Receptor
+               ] ;
+      :interactsWithReceptor :TSH .
+
+
+###  http://w3id.org/def/autoimmunedisease#Intramuscular
+:Intramuscular rdf:type owl:NamedIndividual ,
+                        :AdministrationRoute .
+
+
+###  http://w3id.org/def/autoimmunedisease#Joint
+:Joint rdf:type owl:NamedIndividual ,
+                :Organ ,
+                [ rdf:type owl:Restriction ;
+                  owl:onProperty :presentInBodySystem ;
+                  owl:allValuesFrom :BodySystem
+                ] ;
+       :presentInBodySystem :MusculoskeletalSystem .
+
+
+###  http://w3id.org/def/autoimmunedisease#JointCells
+:JointCells rdf:type owl:NamedIndividual ,
+                     :CellType ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :presentInTissue ;
+                       owl:allValuesFrom :Tissue
+                     ] ;
+            :presentInTissue :SynovialMembrane .
+
+
+###  http://w3id.org/def/autoimmunedisease#L04AC07
+:L04AC07 rdf:type owl:NamedIndividual ,
+                  :ATCGroup .
+
+
+###  http://w3id.org/def/autoimmunedisease#Levothyroxine
+:Levothyroxine rdf:type owl:NamedIndividual ,
+                        :Drug ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :mayCauseSecondaryEffects ;
+                          owl:someValuesFrom :SecondaryEffect
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :administeredIn ;
+                          owl:allValuesFrom :AdministrationRoute
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :composedByActiveIngredient ;
+                          owl:allValuesFrom :ActivePharmaceuticalIngredient
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :interactsWithTarget ;
+                          owl:allValuesFrom :TherapeuticTarget
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :manufacturedBy ;
+                          owl:allValuesFrom :PharmaceuticCompany
+                        ] ;
+               :administeredIn :Oral ;
+               :belongsToATCGroup :H03AA01 ;
+               :hasChebiID <http://w3id.org/def/autoimmunedisease#18332> ;
+               :manufacturedBy :Abbott ;
+               :treatsDisease <http://w3id.org/def/autoimmunedisease#Hashimoto's_Disease> ;
+               :hasCommertialName "Levothyroxine" .
+
+
+###  http://w3id.org/def/autoimmunedisease#LevothyroxineSodium
+:LevothyroxineSodium rdf:type owl:NamedIndividual ,
+                              :ActivePharmaceuticalIngredient ,
+                              :Drug ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :mayCauseSecondaryEffects ;
+                                owl:someValuesFrom :SecondaryEffect
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :administeredIn ;
+                                owl:allValuesFrom :AdministrationRoute
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :composedByActiveIngredient ;
+                                owl:allValuesFrom :ActivePharmaceuticalIngredient
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :interactsWithTarget ;
+                                owl:allValuesFrom :TherapeuticTarget
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :manufacturedBy ;
+                                owl:allValuesFrom :PharmaceuticCompany
+                              ] ;
+                     :composedByActiveIngredient :LevothyroxineSodium .
+
+
+###  http://w3id.org/def/autoimmunedisease#MusculoskeletalSystem
+:MusculoskeletalSystem rdf:type owl:NamedIndividual ,
+                                :BodySystem .
+
+
+###  http://w3id.org/def/autoimmunedisease#Nausea
+:Nausea rdf:type owl:NamedIndividual ,
+                 :SecondaryEffect .
+
+
+###  http://w3id.org/def/autoimmunedisease#Oral
+:Oral rdf:type owl:NamedIndividual ,
+               :AdministrationRoute .
+
+
+###  http://w3id.org/def/autoimmunedisease#PeripheralNervousSystem
+:PeripheralNervousSystem rdf:type owl:NamedIndividual ,
+                                  :BodySystem .
+
+
+###  http://w3id.org/def/autoimmunedisease#RheumatoidArthritis
+:RheumatoidArthritis rdf:type owl:NamedIndividual ,
+                              <http://purl.obolibrary.org/obo/DOID_4> ,
+                              :AutoimmuneDisease ,
+                              :Disease ,
+                              :MusculoskeletalAutoimmuneDisease ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasAsociation ;
+                                owl:someValuesFrom :Asociaciones
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasDiagnosisMethods ;
+                                owl:someValuesFrom :DiagnosisMethods
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasSymptoms ;
+                                owl:someValuesFrom :Symptoms
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :isTreatedBy ;
+                                owl:someValuesFrom :Drug
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasResponsibleImmuneCell ;
+                                owl:allValuesFrom :ImmuneCell
+                              ] ;
+                     :hasDiagnosisMethods :BloodTest ;
+                     :hasMESHTerm :D001172 ;
+                     :hasResponsibleImmuneCell :BCell ;
+                     :hasSymptoms :StiffJoints ;
+                     :isTreatedBy :Tocilizumab ;
+                     :hasDefinition "Rheumatoid arthritis is a chronic inflammatory autoimmune disorder that can affect more than just your joints" .
+
+
+###  http://w3id.org/def/autoimmunedisease#Roche
+:Roche rdf:type owl:NamedIndividual ,
+                :Company ,
+                :PharmaceuticCompany ,
+                [ rdf:type owl:Restriction ;
+                  owl:onProperty :hasCountryOfOrigin ;
+                  owl:allValuesFrom :Country
+                ] ;
+       :hasCountryOfOrigin :Switzerland ;
+       :manufactures :Tocilizumab ;
+       :hasFoundationYear "1986" .
+
+
+###  http://w3id.org/def/autoimmunedisease#SkinConnectiveTissueSystem
+:SkinConnectiveTissueSystem rdf:type owl:NamedIndividual ,
+                                     :BodySystem .
+
+
+###  http://w3id.org/def/autoimmunedisease#StiffJoints
+:StiffJoints rdf:type owl:NamedIndividual ,
+                      :Symptoms .
+
+
+###  http://w3id.org/def/autoimmunedisease#Switzerland
+:Switzerland rdf:type owl:NamedIndividual ,
+                      :Country .
+
+
+###  http://w3id.org/def/autoimmunedisease#SynovialMembrane
+:SynovialMembrane rdf:type owl:NamedIndividual ,
+                           :Tissue ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :presentInOrgan ;
+                             owl:allValuesFrom :Organ
+                           ] ;
+                  :presentInOrgan :Joint .
+
+
+###  http://w3id.org/def/autoimmunedisease#TSH
+:TSH rdf:type owl:NamedIndividual ,
+              <http://purl.uniprot.org/core/Protein> ,
+              :MoleculeType ,
+              :Receptor ,
+              [ rdf:type owl:Restriction ;
+                owl:onProperty :hasMolecularFunction ;
+                owl:someValuesFrom :MolecularFunction
+              ] ,
+              [ rdf:type owl:Restriction ;
+                owl:onProperty :involvedInBiologicalProcess ;
+                owl:someValuesFrom :BiologicalProcess
+              ] ,
+              [ rdf:type owl:Restriction ;
+                owl:onProperty :involvedInPathway ;
+                owl:someValuesFrom <http://purl.uniprot.org/core/Pathway>
+              ] ,
+              [ rdf:type owl:Restriction ;
+                owl:onProperty :expressedBy ;
+                owl:allValuesFrom <http://purl.uniprot.org/core/Gene>
+              ] ,
+              [ rdf:type owl:Restriction ;
+                owl:onProperty :presentInCellType ;
+                owl:allValuesFrom :CellType
+              ] ;
+     :presentInCellType :ThyroidCell .
+
+
+###  http://w3id.org/def/autoimmunedisease#Th17
+:Th17 rdf:type owl:NamedIndividual ,
+               :ImmuneCell ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :producesSignalMolecule ;
+                 owl:allValuesFrom :SignalMolecule
+               ] ;
+      :producesSignalMolecule :IL-2 .
+
+
+###  http://w3id.org/def/autoimmunedisease#Thyroid
+:Thyroid rdf:type owl:NamedIndividual ,
+                  :Organ ,
+                  [ rdf:type owl:Restriction ;
+                    owl:onProperty :presentInBodySystem ;
+                    owl:allValuesFrom :BodySystem
+                  ] ;
+         :presentInBodySystem :EndocrineSystem .
+
+
+###  http://w3id.org/def/autoimmunedisease#ThyroidCell
+:ThyroidCell rdf:type owl:NamedIndividual ,
+                      :CellType ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :presentInTissue ;
+                        owl:allValuesFrom :Tissue
+                      ] ;
+             :presentInTissue :ThyroidTissue .
+
+
+###  http://w3id.org/def/autoimmunedisease#ThyroidTissue
+:ThyroidTissue rdf:type owl:NamedIndividual ,
+                        :Tissue ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :presentInOrgan ;
+                          owl:allValuesFrom :Organ
+                        ] ;
+               :presentInOrgan :Thyroid .
+
+
+###  http://w3id.org/def/autoimmunedisease#Tocilizumab
+:Tocilizumab rdf:type owl:NamedIndividual ,
+                      :Drug ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :mayCauseSecondaryEffects ;
+                        owl:someValuesFrom :SecondaryEffect
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :administeredIn ;
+                        owl:allValuesFrom :AdministrationRoute
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :composedByActiveIngredient ;
+                        owl:allValuesFrom :ActivePharmaceuticalIngredient
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :interactsWithTarget ;
+                        owl:allValuesFrom :TherapeuticTarget
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :manufacturedBy ;
+                        owl:allValuesFrom :PharmaceuticCompany
+                      ] ;
+             :administeredIn :Intramuscular ;
+             :belongsToATCGroup :L04AC07 ;
+             :composedByActiveIngredient :TozilizumabMonoclonalAntibodies ;
+             :hasChebiID <http://w3id.org/def/autoimmunedisease#64360> ;
+             :manufacturedBy :Roche ;
+             :treatsDisease :RheumatoidArthritis ;
+             :hasCommertialName "Actemra" .
+
+
+###  http://w3id.org/def/autoimmunedisease#TozilizumabMonoclonalAntibodies
+:TozilizumabMonoclonalAntibodies rdf:type owl:NamedIndividual ,
+                                          :ActivePharmaceuticalIngredient .
+
+
+###  http://w3id.org/def/autoimmunedisease#UnitedStates
+:UnitedStates rdf:type owl:NamedIndividual ,
+                       :Country .
+
+
+###  http://w3id.org/def/autoimmunedisease#UrogenitalSystem
+:UrogenitalSystem rdf:type owl:NamedIndividual ,
+                           :BodySystem .
+
+
+###  http://w3id.org/def/autoimmunedisease#18332
+<http://w3id.org/def/autoimmunedisease#18332> rdf:type owl:NamedIndividual ,
+                                                       :ChebiID .
+
+
+###  http://w3id.org/def/autoimmunedisease#64360
+<http://w3id.org/def/autoimmunedisease#64360> rdf:type owl:NamedIndividual ,
+                                                       :ChebiID .
+
+
+###  http://w3id.org/def/autoimmunedisease#Hashimoto's_Disease
+<http://w3id.org/def/autoimmunedisease#Hashimoto's_Disease> rdf:type owl:NamedIndividual ,
+                                                                     <http://purl.obolibrary.org/obo/DOID_4> ,
+                                                                     :AutoimmuneDisease ,
+                                                                     :Disease ,
+                                                                     :EndocrineAutoimmuneDisease ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :hasAsociation ;
+                                                                       owl:someValuesFrom :Asociaciones
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :hasDiagnosisMethods ;
+                                                                       owl:someValuesFrom :DiagnosisMethods
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :hasSymptoms ;
+                                                                       owl:someValuesFrom :Symptoms
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :isTreatedBy ;
+                                                                       owl:someValuesFrom :Drug
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :hasResponsibleImmuneCell ;
+                                                                       owl:allValuesFrom :ImmuneCell
+                                                                     ] ;
+                                                            :hasDiagnosisMethods :AntibodyTest ;
+                                                            :hasMESHTerm :D050031 ;
+                                                            :hasResponsibleImmuneCell :Th17 ;
+                                                            :hasSymptoms :Constipation ,
+                                                                         :Fatigue ;
+                                                            :isTreatedBy :Levothyroxine ;
+                                                            :hasDefinition "Hashimoto's disease is an autoimmune disorder affecting the thyroid gland" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:hasFoundationYear rdfs:label "foundation year" .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
